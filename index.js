@@ -1,3 +1,5 @@
+
+
 //Task_4
 // for (i = 0; i <= 0; i++) {
 // let sum = 0;
@@ -16,6 +18,8 @@
 //   }
 // }
 // }
+
+
 
 //Task_1
 
@@ -53,6 +57,9 @@
 
 // }
 
+
+
+
 //Task_5
 
 // for (i = 0; ; i++) {
@@ -82,25 +89,64 @@
 //   }
 // }
 
+
+
+//Task_6
+// let hamstersAmount = 100;
+
+// for (let attempts = 1; ; attempts++) {
+//     let userHamstersAmount = prompt('how many hamsters do u wanna get ?');
+
+//     if (isNaN(userHamstersAmount) || userHamstersAmount === '') {
+//         alert('please enter correct number');
+//         continue;
+//     } else if (userHamstersAmount === null) {
+//         alert(`you've cancelled the game`);
+//         break;
+//     }
+
+//     userHamstersAmount = +userHamstersAmount;
+    
+//     if (hamstersAmount === userHamstersAmount) {
+//         alert(`you got all hamsters in ${attempts} times`);
+//         break;
+//     } else if (userHamstersAmount > hamstersAmount) {
+//         alert('too much, there is no such amount of hamsters');
+//     } else {
+//         hamstersAmount = hamstersAmount - userHamstersAmount;
+//         alert(`you successfully got ${userHamstersAmount} hamsters`);
+//     }
+// }
+
+
+
+
 //Task_7
-for (a = 0; ; a++) {
-  let userNumberOne = prompt("enter your number N");
-  let userNumberTwo = prompt("enter your number M");
-  if (
-    isNaN(userNumberOne) ||
-    isNaN(userNumberTwo) ||
-    userNumberOne === "" ||
-    userNumberTwo === "" ||
-    userNumberOne === null ||
-    userNumberTwo === null
-  ) {
-    alert("enter your numbers");
-    continue;
-  }
-  userNumberOne = +userNumberOne;
-  userNumberTwo = +userNumberTwo;
-  for (let i = userNumberOne; i <= userNumberTwo; i++) {
-    let multiplication = `${i} * ${i}`;
-    alert(multiplication);
-  }
+// for (a = 0; ; a++) {
+//   let userNumberOne = prompt("enter your number N");
+//   let userNumberTwo = prompt("enter your number M");
+//   if (
+//     isNaN(userNumberOne) ||
+//     isNaN(userNumberTwo) ||
+//     userNumberOne === "" ||
+//     userNumberTwo === "" ||
+//     userNumberOne === null ||
+//     userNumberTwo === null
+//   ) {
+//     alert("enter your numbers");
+//     continue;
+//   }
+//   userNumberOne = +userNumberOne;
+//   userNumberTwo = +userNumberTwo;
+//   for (let i = userNumberOne; i <= userNumberTwo; i++) {
+//     let multiplication = `${i} * ${i}`;
+//     alert(multiplication);
+//   }
+// }
+
+//Task_8
+
+let userNumber = prompt("enter your number");
+for(i=0; i){
+
 }
