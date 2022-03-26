@@ -1,5 +1,3 @@
-
-
 //Task_4
 // for (i = 0; i <= 0; i++) {
 // let sum = 0;
@@ -18,8 +16,6 @@
 //   }
 // }
 // }
-
-
 
 //Task_1
 
@@ -57,9 +53,6 @@
 
 // }
 
-
-
-
 //Task_5
 
 // for (i = 0; ; i++) {
@@ -89,8 +82,6 @@
 //   }
 // }
 
-
-
 //Task_6
 // let hamstersAmount = 100;
 
@@ -106,7 +97,7 @@
 //     }
 
 //     userHamstersAmount = +userHamstersAmount;
-    
+
 //     if (hamstersAmount === userHamstersAmount) {
 //         alert(`you got all hamsters in ${attempts} times`);
 //         break;
@@ -117,9 +108,6 @@
 //         alert(`you successfully got ${userHamstersAmount} hamsters`);
 //     }
 // }
-
-
-
 
 //Task_7
 // for (a = 0; ; a++) {
@@ -147,6 +135,7 @@
 //Task_8
 
 let userNumber = prompt("enter your number");
-for(i=0; i){
-
+userNumber = +userNumber;
+for (i = userNumber; i >= 0; i--) {
+  alert(i);
 }
