@@ -176,10 +176,29 @@
 // Вводим 5
 // Программа выводит "зазазазазаика"
 
-const userNum = prompt('Enter you number');
-let text = ''
+// const userNum = prompt('Enter you number');
+// let text = ''
 
-for (let i = 0; i < userNum; i++) {
-    text += 'за'
-}
-console.log(`${text}ика`)
+// for (let i = 0; i < userNum; i++) {
+//     text += 'за'
+// }
+// console.log(`${text}ика`)
+
+
+//Task 11
+// Пользователь вводит год своего рождения
+// вывести в консоль инфу сколько пользователю было в разные года до текущего
+// например: 
+// вводим 2003:
+// выводим: в 2003 было 1 год
+// в 2004 было 2 год
+// в 2005 было 3 год 
+// и тд
+// в 2022 было 19 год
+
+// const userBirthday = +prompt('Введите год своего рождения');
+// let userAge = 1;
+// for (let year = userBirthday; year <= 2022; year++) {
+//     console.log(`в ${year} было ${userAge}`);
+//     userAge++
+// }
