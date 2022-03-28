@@ -218,3 +218,25 @@
 // for (let nextYear = 2023; nextYear <= 2030; nextYear++) {
 //     console.log(`в ${nextYear} будет ${++userAge}`);
 // }
+
+//Task 13
+// Пользователя спрашивают пароль
+// если пароль введен неправильно, спрашивать еще раз
+// если правильно вывести "добро пожаловать"
+// если отмена вывести "вход отменен"
+
+// const correctPassword = 12345;
+// for (;;) {
+//     let userPass = prompt('Введите пароль');
+//     if (userPass === null) {
+//         console.log('Вход отменен');
+//         break;
+//     }
+//     userPass = +userPass
+//     if (userPass === correctPassword) {
+//         console.log('Добро пожаловать');
+//         break;
+//     } else {
+//         console.log('Введите пароль снова');
+//     }
+// }
