@@ -1,17 +1,17 @@
 // 1. Написать программу, которая вычисляет сумму чисел от 1 до n. Значение n вводится с клавиатуры.
 // Проверить число n на корректность (чтобы это было число, чтобы оно не было меньше 1, чтобы это было не null).
 
-// let userNumber = prompt("enter a number");
-// if (userNumber !== null && !isNaN(userNumber) && +userNumber > 1) {
-//     userNumber = +userNumber;
-//     let sum = 0;
-//     for (let i = 1; i <= userNumber; i++) {
-//         sum += i;
-//     }
-//     console.log(`sum from 1 to ${userNumber} is ${sum}`);
-// } else {
-//     console.log('dont work');
-// }
+let userNumber = prompt("enter a number");
+if (userNumber !== null && !isNaN(userNumber) && +userNumber > 1) {
+    userNumber = +userNumber;
+    let sum = 0;
+    for (let i = 1; i <= userNumber; i++) {
+        sum += i;
+    }
+    console.log(`sum from 1 to ${userNumber} is ${sum}`);
+} else {
+    console.log('dont work');
+}
 
 
 
@@ -25,26 +25,26 @@
 // Отрицательных: 5 шт.
 // Нулей: 3 шт.»
 
-// const promptAmount = prompt('enter how many numbers do u wanna enter');
-// let positive = 0;
-// let negative = 0;
-// let zero = 0;
-// for (let i = 0; i < promptAmount && promptAmount !== null && !isNaN(promptAmount); i++) {
-//     let userNumber = prompt('enter number');
-//     if (userNumber === null || isNaN(userNumber)) {
-//         console.log('dont work');
-//         break;
-//     }
-//     userNumber = +userNumber;
-//     if (userNumber > 0) {
-//         positive++;
-//     } else if (userNumber < 0) {
-//         negative++;
-//     } else {
-//         zero++
-//     }
-// }
-// console.log(positive, negative, zero);
+const promptAmount = prompt('enter how many numbers do u wanna enter');
+let positive = 0;
+let negative = 0;
+let zero = 0;
+for (let i = 0; i < promptAmount && promptAmount !== null && !isNaN(promptAmount); i++) {
+    let userNumber = prompt('enter number');
+    if (userNumber === null || isNaN(userNumber)) {
+        console.log('dont work');
+        break;
+    }
+    userNumber = +userNumber;
+    if (userNumber > 0) {
+        positive++;
+    } else if (userNumber < 0) {
+        negative++;
+    } else {
+        zero++
+    }
+}
+console.log(positive, negative, zero);
 
 
 
@@ -52,11 +52,11 @@
 // двузначные числа, которые делятся на 4, но не
 // делятся на 6.
 
-// for (let i = 10; i >= 10 && i < 100; i++) {
-//     if (i % 4 === 0 && i % 6 !== 0) {
-//         console.log(i);
-//     }
-// }
+for (let i = 10; i >= 10 && i < 100; i++) {
+    if (i % 4 === 0 && i % 6 !== 0) {
+        console.log(i);
+    }
+}
 
 
 
@@ -66,24 +66,22 @@
 // тогда, когда нажали «отмена», после чего выводится
 // среднее арифметическое.
 
-
-// let i = 0;
-// let sum = 0;
-// let userNumber;
-// for (userNumber = prompt("Enter number"); userNumber !== null; userNumber = prompt("Enter number")) {
-//     if (isNaN(userNumber)) {
-//         break;
-//     }
-//     userNumber = +userNumber;
-//     i++;
-//     sum = sum + userNumber;
-// }
-// if ((userNumber === null || isNaN(userNumber)) && sum !== 0) {
-//     console.log(sum / i);
-// } else {
-//     console.log('dont work');
-// }
-
+let i = 0;
+let sum = 0;
+let userNumber;
+for (userNumber = prompt("Enter number"); userNumber !== null; userNumber = prompt("Enter number")) {
+    if (isNaN(userNumber)) {
+        break;
+    }
+    userNumber = +userNumber;
+    i++;
+    sum = sum + userNumber;
+}
+if ((userNumber === null || isNaN(userNumber)) && sum !== 0) {
+    console.log(sum / i);
+} else {
+    console.log('dont work');
+}
 
 
 
@@ -93,8 +91,6 @@
 // первых двух
 // Если пользователь ввел правильное произведение вывести собщение что он молодец!
 // Если нет, выводим пользователю правильный ответ.
-
-
 
 cikl: do {
     let userNumberOne;
@@ -140,7 +136,6 @@ cikl: do {
 
 
 
-
 // 6.
 // Под диваном живет 100 хомячков.
 // Пользователь вводит число хомячков,
@@ -149,29 +144,27 @@ cikl: do {
 // чем число, которое ввел пользователь
 // вывести сообщение.
 
-
-// let hamstersAmount = 100;
-// for (let attempts = 1; ; attempts++) {
-//     let userHamstersAmount = prompt('how many hamsters do u wanna get ?');
-//     if (isNaN(userHamstersAmount) || userHamstersAmount === '') {
-//         alert('please enter correct number');
-//         continue;
-//     } else if (userHamstersAmount === null) {
-//         alert(`you've cancelled the game`);
-//         break;
-//     }
-//     userHamstersAmount = +userHamstersAmount;
-//     if (hamstersAmount === userHamstersAmount) {
-//         alert(`you got all hamsters in ${attempts} times`);
-//         break;
-//     } else if (userHamstersAmount > hamstersAmount) {
-//         alert('too much, there is no such amount of hamsters');
-//     } else {
-//         hamstersAmount = hamstersAmount - userHamstersAmount;
-//         alert(`you successfully got ${userHamstersAmount} hamsters`);
-//     }
-// }
-
+let hamstersAmount = 100;
+for (let attempts = 1; ; attempts++) {
+    let userHamstersAmount = prompt('how many hamsters do u wanna get ?');
+    if (isNaN(userHamstersAmount) || userHamstersAmount === '') {
+        alert('please enter correct number');
+        continue;
+    } else if (userHamstersAmount === null) {
+        alert(`you've cancelled the game`);
+        break;
+    }
+    userHamstersAmount = +userHamstersAmount;
+    if (hamstersAmount === userHamstersAmount) {
+        alert(`you got all hamsters in ${attempts} times`);
+        break;
+    } else if (userHamstersAmount > hamstersAmount) {
+        alert('too much, there is no such amount of hamsters');
+    } else {
+        hamstersAmount = hamstersAmount - userHamstersAmount;
+        alert(`you successfully got ${userHamstersAmount} hamsters`);
+    }
+}
 
 
 
@@ -182,50 +175,48 @@ cikl: do {
 // Ввели число 5
 // выводим: 2*2 потом 3*3 потом 4*4 потом 5*5
 
-
-// let userNumberOne;
-// do {
-//     userNumberOne = prompt("Enter number one");
-//     if (isNaN(userNumberOne) || userNumberOne === '') {
-//         console.log('Try enter a number');
-//     } else if (userNumberOne === null) {
-//         console.log('You left the program');
-//         break;
-//     }
-// } while (userNumberOne === '' || isNaN(userNumberOne))
-// if (userNumberOne !== null) {
-//     userNumberOne = +userNumberOne;
-//     let userNumberTwo;
-//     do {
-//         userNumberTwo = prompt("Enter number two");
-//         if (isNaN(userNumberTwo)) {
-//             console.log('Try enter a number');
-//         } else if (userNumberTwo === null || userNumberTwo === '') {
-//             console.log('You left the program');
-//             break;
-//         }
-//     } while (userNumberTwo === '' || isNaN(userNumberTwo))
-//     userNumberTwo = +userNumberTwo;
-//     const result = Math.pow(5, 2);
-//     for (userNumberOne; userNumberOne <= userNumberTwo; userNumberOne++) {
-//         console.log(Math.pow(userNumberOne, 2));
-//     }
-// }
+let userNumberOne;
+do {
+    userNumberOne = prompt("Enter number one");
+    if (isNaN(userNumberOne) || userNumberOne === '') {
+        console.log('Try enter a number');
+    } else if (userNumberOne === null) {
+        console.log('You left the program');
+        break;
+    }
+} while (userNumberOne === '' || isNaN(userNumberOne))
+if (userNumberOne !== null) {
+    userNumberOne = +userNumberOne;
+    let userNumberTwo;
+    do {
+        userNumberTwo = prompt("Enter number two");
+        if (isNaN(userNumberTwo)) {
+            console.log('Try enter a number');
+        } else if (userNumberTwo === null || userNumberTwo === '') {
+            console.log('You left the program');
+            break;
+        }
+    } while (userNumberTwo === '' || isNaN(userNumberTwo))
+    userNumberTwo = +userNumberTwo;
+    const result = Math.pow(5, 2);
+    for (userNumberOne; userNumberOne <= userNumberTwo; userNumberOne++) {
+        console.log(Math.pow(userNumberOne, 2));
+    }
+}
 
 
 
 // 8. Пользователь вводит число n. Написать цикл, который выводит все числа от n до 0.
 
-// let userNumber = prompt("Enter number");
-// if (userNumber !== null && !isNaN(userNumber) && userNumber !== '') {
-//     userNumber = +userNumber
-//     for (userNumber; userNumber !== -1; userNumber--) {
-//         console.log(userNumber);
-//     }
-// } else {
-//     console.log('dont work');
-// }
-
+let userNumber = prompt("Enter number");
+if (userNumber !== null && !isNaN(userNumber) && userNumber !== '') {
+    userNumber = +userNumber
+    for (userNumber; userNumber !== -1; userNumber--) {
+        console.log(userNumber);
+    }
+} else {
+    console.log('dont work');
+}
 
 
 
@@ -233,25 +224,25 @@ cikl: do {
 // каждое последующее число должно быть больше предыдущего, иначе вывести
 // ошибку.
 
-// let userNumber;
-// cikl: for (let i = 1; i < 6; i++) {
-//     let number = userNumber;
-//     do {
-//         userNumber = prompt(`Enter number ${i}`);
-//         if (isNaN(userNumber) || userNumber === '') {
-//             console.log('Try enter a number');
-//         } else if (userNumber === null) {
-//             console.log('You left the program');
-//             break cikl;
-//         }
-//     } while (userNumber === '' || isNaN(userNumber))
-//     if (userNumber !== null && !isNaN(userNumber)) {
-//         if (number > userNumber) {
-//             console.log('error');
-//             break;
-//         }
-//     }
-// }
+let userNumber;
+cikl: for (let i = 1; i < 6; i++) {
+    let number = userNumber;
+    do {
+        userNumber = prompt(`Enter number ${i}`);
+        if (isNaN(userNumber) || userNumber === '') {
+            console.log('Try enter a number');
+        } else if (userNumber === null) {
+            console.log('You left the program');
+            break cikl;
+        }
+    } while (userNumber === '' || isNaN(userNumber))
+    if (userNumber !== null && !isNaN(userNumber)) {
+        if (number > userNumber) {
+            console.log('error');
+            break;
+        }
+    }
+}
 
 
 
@@ -264,17 +255,17 @@ cikl: do {
 // Программа выводит "зазазазазаика"
 
 
-// do {
-//     let i = prompt('Enter number');
-//     if (i === null) {
-//         console.log('You left the program');
-//         break;
-//     } else if (isNaN(i) || i === '') {
-//         console.log('Try enter a number')
-//         continue;
-//     }
-//     console.log(`${'за'.repeat(+i)}ика`);
-// } while (true)
+do {
+    let i = prompt('Enter number');
+    if (i === null) {
+        console.log('You left the program');
+        break;
+    } else if (isNaN(i) || i === '') {
+        console.log('Try enter a number')
+        continue;
+    }
+    console.log(`${'за'.repeat(+i)}ика`);
+} while (true)
 
 
 
@@ -288,17 +279,16 @@ cikl: do {
 // в 2004 было 2;
 // и тд до 2022.
 
-// let userYear = prompt('Enter your year born');
-// if (userYear !== null && !isNaN(userYear) && userYear !== '') {
-//     userYear = +userYear;
-//     for (let i = 0; userYear <= 2022; userYear++, i++) {
-//         console.log(`in ${userYear} it was ${i} years old`);
-//     }
-// }
-// else {
-//     console.log('dont work');
-// }
-
+let userYear = prompt('Enter your year born');
+if (userYear !== null && !isNaN(userYear) && userYear !== '') {
+    userYear = +userYear;
+    for (let i = 0; userYear <= 2022; userYear++, i++) {
+        console.log(`in ${userYear} it was ${i} years old`);
+    }
+}
+else {
+    console.log('dont work');
+}
 
 
 
@@ -311,16 +301,15 @@ cikl: do {
 // и тд до 2023
 
 
-// let userYear = prompt('Enter your years old');
-// if (userYear !== null && !isNaN(userYear) && userYear !== '' && +userYear <= 100) {
-//     userYear = +userYear;
-//     for (let Year = 2023; Year <= 2030; Year++) {
-//         console.log(`in ${Year} will be ${++userYear}`);
-//     }
-// } else {
-//     console.log('dont work');
-// }
-
+let userYear = prompt('Enter your years old');
+if (userYear !== null && !isNaN(userYear) && userYear !== '' && +userYear <= 100) {
+    userYear = +userYear;
+    for (let Year = 2023; Year <= 2030; Year++) {
+        console.log(`in ${Year} will be ${++userYear}`);
+    }
+} else {
+    console.log('dont work');
+}
 
 
 
@@ -329,32 +318,31 @@ cikl: do {
 // если правильно вывести 'Добро пожаловать'
 // если отмена вывести 'вход отменен'
 
-// const userPasswod = '123qwe';
-// let userControl;
-// do {
-//     userControl = prompt('Enter your passwod');
-//     if (userPasswod === userControl) {
-//         console.log('Welcome')
-//     } else if (userControl === null) {
-//         console.log('enter canceled');
-//         break;
-//     }
-// } while (userPasswod !== userControl)
-
+const userPasswod = '123qwe';
+let userControl;
+do {
+    userControl = prompt('Enter your passwod');
+    if (userPasswod === userControl) {
+        console.log('Welcome')
+    } else if (userControl === null) {
+        console.log('enter canceled');
+        break;
+    }
+} while (userPasswod !== userControl)
 
 
 
 
 // 14 Пользователь вводит число n, вывести на экран все четные числа от 1 до n
 
-// let userNumber = prompt('Enter number');
-// if (userNumber !== null && !isNaN(userNumber) && userNumber !== '') {
-//     userNumber = +userNumber;
-//     for (let i = 1; i <= userNumber; i++) {
-//         if (i % 2 === 0) {
-//             console.log(i);
-//         }
-//     }
-// } else {
-//     console.log('dont work');
-// }
+let userNumber = prompt('Enter number');
+if (userNumber !== null && !isNaN(userNumber) && userNumber !== '') {
+    userNumber = +userNumber;
+    for (let i = 1; i <= userNumber; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+} else {
+    console.log('dont work');
+}
