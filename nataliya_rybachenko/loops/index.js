@@ -52,3 +52,21 @@
 //     }
 // }
 
+
+// 4. Написать программу, которая выводит среднее
+// арифметическое n чисел введенных пользователем.
+// Ввод чисел прекращается
+// тогда, когда нажали «отмена», после чего выводится
+// среднее арифметическое.
+
+// let sumNumber=0;
+// let counterNumber=0;
+// for( ; ;counterNumber++){
+//     let Number=prompt('Enter a number');
+//     if(Number!==null){
+//         Number=+Number;
+//         sumNumber+=Number;
+//     }else 
+//     break;
+// }
+// console.log(`Arithmetic mean of numbers ${sumNumber / counterNumber}`);
