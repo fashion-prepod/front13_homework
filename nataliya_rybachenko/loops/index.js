@@ -12,3 +12,31 @@
 // }
 // console.log(sumNumber);
 // }
+
+
+// 2. Написать программу, которая определяет количество
+// положительных, отрицательных чисел и нулей. В
+// начале программы, пользователь самостоятельно
+// задает какое количество чисел будет вводить, затем
+// вводит сами числа.
+// Пример вывода:
+// «Положительных: 2 шт.
+// Отрицательных: 5 шт.
+// Нулей: 3 шт.»
+
+// const promptAmount=+prompt('Enter haw many numbers do u wanna enter');
+// let positive=0;
+// let negative=0;
+// let zeros=0;
+// for(let i=1; i<=promptAmount; i++){
+//     let usernumber=+prompt('Enter number');
+   
+//     if(usernumber>0){
+//         positive++;
+//     }else if(usernumber<0){
+//         negative++;
+//     }else{
+//         zeros++
+//     }
+// }
+// console.log(positive, negative, zeros)
