@@ -145,3 +145,16 @@
 //     console.log(numberN);
 // }
 
+
+// 9. Написать программу, в которой пользователя просят ввести числа 5 раз. Причем
+// каждое последующее число должно быть больше предыдущего, иначе вывести
+// ошибку.
+
+// let number1=prompt('Enter a number');
+// for(let i=1; i<5; i++){
+//     let number2=prompt('Enter a number greater than the previous one');
+//     if(number2>number1){
+//         number1=number2
+//     }else {alert('error')}
+// }
+
