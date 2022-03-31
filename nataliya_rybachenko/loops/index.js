@@ -70,3 +70,21 @@
 //     break;
 // }
 // console.log(`Arithmetic mean of numbers ${sumNumber / counterNumber}`);
+
+
+// 5. Проверка на таблицу умножения
+// Пользователь вводит два случайных числа
+// После чего вводит еще одно число, которое должно являться произведением 
+// первых двух
+// Если пользователь ввел правильное произведение вывести собщение что он молодец!
+// Если нет, выводим пользователю правильный ответ.
+
+// const num1 = +prompt('enter num1');
+// const num2 = +prompt('enter num2');
+// const userResult = +prompt('enter num1 * num2'); 
+// const correctResult = num1 * num2; 
+// if (num1 * num2 === userResult) {     
+//     console.log('molodetz'); 
+// } else {    
+//      console.log(`this is worng, correct resutl is ${num1 * num2}`); 
+//     }
