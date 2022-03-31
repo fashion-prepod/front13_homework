@@ -121,12 +121,12 @@
 // и тд
 // в 2030 будет 22
 
-let age = +prompt('Enter your age');
-startAge = 2022;
-for (i = startAge; i <= 2030; i++) {
-    console.log(`in ${i} will be ${age}`);
-    age++
-}
+// let age = +prompt('Enter your age');
+// startAge = 2022;
+// for (i = startAge; i <= 2030; i++) {
+//     console.log(`in ${i} will be ${age}`);
+//     age++
+// }
 
 
 
@@ -135,4 +135,12 @@ for (i = startAge; i <= 2030; i++) {
 // если правильно вывести "добро пожаловать"
 // если отмена вывести "вход отменен"
 
+
+
 // 4. Пользователь вводит число n, вывести на экран все четные числа от 1 до n
+
+let n = +prompt('Enter number');
+
+for (i = 2; i <= n; i = i + 2) {
+    console.log(i);
+}
