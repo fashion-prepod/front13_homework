@@ -229,3 +229,14 @@
 //         break;
 //     }
 // };
+
+
+// 14. Пользователь вводит число n, вывести на экран все четные числа от 1 до n
+   
+// let numberN=prompt('Enter a number');
+// numberN=+numberN;
+// for(let i=1; i<=numberN; i++){
+//     if(i%2===0){
+//         console.log(i);
+//     };
+// };
