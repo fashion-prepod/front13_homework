@@ -88,3 +88,36 @@
 // } else {    
 //      console.log(`this is worng, correct resutl is ${num1 * num2}`); 
 //     }
+
+
+// 6.
+// Под диваном живет 100 хомячков.
+// Пользователь вводит число хомячков,
+// которое он хочет достать из-под дивана.
+// Если число оставшихся хомячков меньше
+// чем число, которое ввел пользователь
+// вывести сообщение.
+
+
+// let hamstersAmount = 100; 
+// for (let attempts = 1; ; attempts++) {     
+//     let userHamstersAmount = prompt('how many hamsters do u wanna get ?');      
+//     if (isNaN(userHamstersAmount) || userHamstersAmount === '') {        
+//          alert('please enter correct number');         
+//          continue;     
+//         } else if (userHamstersAmount === null) {         
+//             alert(`you've cancelled the game`);         
+//             break;     
+//         }      
+//         userHamstersAmount = +userHamstersAmount;          
+//         if (hamstersAmount === userHamstersAmount) {         
+//             alert(`you got all hamsters in ${attempts} times`);         
+//             break;     
+//         } else if (userHamstersAmount > hamstersAmount) {         
+//             alert('too much, there is no such amount of hamsters');     
+//         } else {         
+//             hamstersAmount = hamstersAmount - userHamstersAmount;         
+//             alert(`you successfully got ${userHamstersAmount} hamsters`);     
+//         } 
+//     }
+
