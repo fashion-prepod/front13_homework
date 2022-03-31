@@ -121,3 +121,19 @@
 //         } 
 //     }
 
+
+// 7. Пользователь вводит два числа n и m, с помощью цикла вывести квадраты всех
+// чисел от n до m.
+// Например:
+// Ввели число 2
+// Ввели число 5
+// выводим: 2*2 потом 3*3 потом 4*4 потом 5*5
+
+// let numberN=prompt('Enter a number N');
+// let numberM=prompt('Enter a number M');
+// numberN=+numberN;
+// numberM=+numberM;
+// for(; numberN<=numberM;numberN++){
+//     console.log(numberN**2);
+// }
+
