@@ -137,3 +137,11 @@
 //     console.log(numberN**2);
 // }
 
+
+// 8. Пользователь вводит число n. Написать цикл, который выводит все числа от n до 0.
+
+// let numberN=prompt('Enter a number N');
+// for(;numberN>=0;numberN--){
+//     console.log(numberN);
+// }
+
