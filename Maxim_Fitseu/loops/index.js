@@ -102,14 +102,14 @@
 // и тд
 // в 2022 было 19 год
 
-let age = +prompt('Enter your birthday');
-let startAge = 1;
+// let age = +prompt('Enter your birthday');
+// let startAge = 1;
 
 
-for (i = age; i <= 2022; i++) {
-    console.log(`in ${i} was ${+startAge}`);
-    startAge++;
-}
+// for (i = age; i <= 2022; i++) {
+//     console.log(`in ${i} was ${+startAge}`);
+//     startAge++;
+// }
 
 
 // 2. Пользователь вводит свой возраст. Вывести в консоль 
@@ -120,6 +120,13 @@ for (i = age; i <= 2022; i++) {
 // в 2024 будет 16
 // и тд
 // в 2030 будет 22
+
+let age = +prompt('Enter your age');
+startAge = 2022;
+for (i = startAge; i <= 2030; i++) {
+    console.log(`in ${i} will be ${age}`);
+    age++
+}
 
 
 
