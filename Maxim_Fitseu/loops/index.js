@@ -135,12 +135,25 @@
 // если правильно вывести "добро пожаловать"
 // если отмена вывести "вход отменен"
 
-
+let password = prompt('Enter password');
+let checkPass;
+for (let i = 0; i < Infinity; i++) {
+    checkPass = prompt('Enter password');
+    if (checkPass === password) {
+        console.log('Correct password');
+        break;
+    } else if (checkPass === null) {
+        console.log('Enter cancelled');
+        break;
+    } else if (checkPass !== password) {
+        console.log('Uncorrect password');
+    }
+}
 
 // 4. Пользователь вводит число n, вывести на экран все четные числа от 1 до n
 
-let n = +prompt('Enter number');
+// let n = +prompt('Enter number');
 
-for (i = 2; i <= n; i = i + 2) {
-    console.log(i);
-}
+// for (i = 2; i <= n; i = i + 2) {
+//     console.log(i);
+// }
