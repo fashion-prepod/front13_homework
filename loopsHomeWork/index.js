@@ -242,3 +242,18 @@
 //   alert(`${userNumber} year+${age} year(s) old`);
 // }
 
+//Task_2
+// Пользователь вводит свой возраст. Вывести в консоль
+// сколько лет будет пользователю каждый год до 2030
+// например: вводим 14:
+// выводим:
+// в 2023 будет 15
+// в 2024 будет 16
+// и тд
+// в 2023 будет 22
+
+// let userNumber = +prompt("enter your age");
+// for (let data = 2022; data <= 2030; userNumber++, data++) {
+//   alert(`${data} year ${userNumber}years old`);
+// }
+
