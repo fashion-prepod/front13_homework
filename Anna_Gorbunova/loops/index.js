@@ -191,3 +191,24 @@
     
 //     alert(word);
 // }
+
+
+
+// 2.1
+// Пользователь вводит год своего рождения, вывести в консоль инфу сколько пользователю было в разные года до текущего
+// например:
+// вводим 2003:
+// выводим: в 2003 было 1 год
+// в 2004 было 2 года
+// в 2005 было 3 года
+// и тд
+// в 2022 было 19
+
+
+// let userYearOfBirth = +prompt('Enter year of birth', '');
+// let userAge = 0;
+
+// for (;userYearOfBirth <= 2022; userYearOfBirth++) {
+//     console.log(`In ${userYearOfBirth} the user was ${userAge} year old`);
+//     userAge++;
+// }
