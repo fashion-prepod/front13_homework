@@ -57,3 +57,31 @@
 //         }
 //     }
 // }
+
+
+// 6
+// Под диваном живет 100 хомячков.
+// Пользователь вводит число хомячков,
+// которое он хочет достать из-под дивана.
+// Если число оставшихся хомячков меньше
+// чем число, которое ввел пользователь
+// вывести сообщение.
+
+
+// let hamsters = 100;
+
+
+// for (; ;) {
+
+//     let numberOfHamsters = prompt('How many hamster to get?');
+    
+//     if(numberOfHamsters === null || numberOfHamsters === '' || isNaN(numberOfHamsters)) {
+//         alert('Enter number');
+//     } else if(numberOfHamsters > hamsters){
+//         alert('Not so many hamsters :)');
+//         break;
+//     } else {
+//         hamsters -= numberOfHamsters;
+//     }
+    
+// }
