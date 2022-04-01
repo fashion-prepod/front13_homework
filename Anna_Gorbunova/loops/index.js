@@ -131,3 +131,36 @@
 // } else {
 //     alert('Enter number');
 // }
+
+
+// 9
+// Написать программу, в которой пользователя просят ввести числа 5 раз. Причем
+// каждое последующее число должно быть больше предыдущего, иначе вывести
+// ошибку.
+
+// let userNumber = 0;
+
+// for (let i = 0; i < 5; i++) {
+
+//     let userNumberNew = prompt('Enter  number');
+    
+//     if (userNumberNew === null) {
+//         alert('Goodbye');
+//         break;
+//     } else if (userNumberNew === '' || isNaN(userNumberNew)) {
+//         alert('It is not a number');
+//         i--;
+//         continue;
+        
+//     } 
+    
+//     userNumberNew = +userNumberNew;
+
+//     if (userNumberNew > userNumber) {
+//         userNumber = userNumberNew;
+//     } else {
+//         alert('Too small number!');
+//         break;
+//     }
+
+// }
