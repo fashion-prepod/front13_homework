@@ -196,3 +196,33 @@
 //   userNumber = nextUserNumber;
 // }
 
+// // //Task_10
+// //  Написать программу-заику. Пользователь вводит число. Вывести количество "за"
+// // (в слове "заика") равное этому числу.
+// // Например:
+// // Вводим 3
+// // Программа выводит "зазазаика"
+// // Вводим 5
+// // Программа выводит "зазазазазаика"
+
+// for (;;) {
+//   let userNumber = prompt("enter your number from 1");
+//   let a = "za";
+//   let b = "ika";
+//   let sum = a + b;
+//   if (
+//     userNumber === "" ||
+//     userNumber === null ||
+//     isNaN(userNumber) ||
+//     userNumber <= 0
+//   ) {
+//     alert("enter your number");
+//     continue;
+//   }
+//   userNumber = +userNumber;
+//   for (let i = 1; i < userNumber; i++) {
+//     sum = a + sum;
+//   }
+//   alert(sum);
+// }
+
