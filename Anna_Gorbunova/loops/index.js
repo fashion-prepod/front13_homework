@@ -255,3 +255,17 @@
 //         break;
 //     } 
 // }
+
+
+// 2.4
+// Пользователь вводит число n, вывести на экран все четные числа от 1 до n
+
+
+// let userNumber = +prompt('Enter number', '');
+
+// for (let i = 1; i < userNumber; i++) {
+
+//     if (i % 2 === 0) {
+//         alert(i);
+//     }
+// }
