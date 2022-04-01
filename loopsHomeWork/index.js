@@ -181,3 +181,18 @@
 //   alert(i);
 // }
 
+// //Task_9
+// Написать программу, в которой пользователя просят ввести числа 5 раз. Причем
+// каждое последующее число должно быть больше предыдущего, иначе вывести
+// ошибку.
+
+// let userNumber = +prompt("enter your number");
+// for (let i = 1; i < 5; i++) {
+//   let nextUserNumber = +prompt("enter a number more than previous");
+//   if (nextUserNumber <= userNumber) {
+//     alert("enter correct value");
+//     break;
+//   }
+//   userNumber = nextUserNumber;
+// }
+
