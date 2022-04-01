@@ -231,3 +231,27 @@
 //     console.log(`In ${year} the user will be ${userAge} years old`);
 //     userAge++;
 // }
+
+
+// 2.3
+// Пользователя спрашивают пароль
+// если пароль введен неправильно, спрашивать еще раз
+// если правильно, вывести 'добро пожаловать'
+// если отмена, вывести 'вход отменен'
+
+
+// for (;;) {
+
+//     let userPassword = prompt('Enter password', '');
+//     let password = '123cool';
+
+//     if (userPassword === '') {
+//         continue;
+//     } else if (userPassword === null) {
+//         alert('Canceled');
+//         break;
+//     } else if (userPassword === password) {
+//         alert('Welcome!');
+//         break;
+//     } 
+// }
