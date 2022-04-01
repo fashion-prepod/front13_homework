@@ -172,3 +172,12 @@
 //   }
 // }
 
+//Task_8
+//Пользователь вводит число n. Написать цикл, который выводит все числа от n до 0.
+
+// let userNumber = prompt("enter your number");
+// userNumber = +userNumber;
+// for (let i = userNumber; i >= 0; i--) {
+//   alert(i);
+// }
+
