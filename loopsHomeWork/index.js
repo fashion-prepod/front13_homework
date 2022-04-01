@@ -279,3 +279,13 @@
 //   }
 // }
 
+//Task_4
+// Пользователь вводит число n, вывести на экран все четные числа от 1 до n.
+
+// let userNumber = +prompt("enter your number");
+// for (let i = 1; i < userNumber; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
