@@ -88,7 +88,7 @@
 
 
 
-/ 7
+// 7
 // Пользователь вводит два числа n и m, с помощью цикла вывести квадраты всех
 // чисел от n до m.
 // Например:
@@ -115,4 +115,19 @@
 
 //     }
 
+// }
+
+
+// 8
+// Пользователь вводит число n. Написать цикл, который выводит все числа от n до 0.
+
+// let userNumber = prompt('Enter number');
+
+// if(userNumber !== null && userNumber !== '' && !isNaN(userNumber)) {
+//     for (let i = userNumber; i > 0; i--) {
+//         alert(i);
+//     }
+
+// } else {
+//     alert('Enter number');
 // }
