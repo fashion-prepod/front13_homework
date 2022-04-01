@@ -85,3 +85,34 @@
 //     }
     
 // }
+
+
+
+/ 7
+// Пользователь вводит два числа n и m, с помощью цикла вывести квадраты всех
+// чисел от n до m.
+// Например:
+// Ввели число 2
+// Ввели число 5
+// выводим: 2*2 потом 3*3 потом 4*4 потом 5*5
+
+
+// let oneUserNumber = prompt('Enter number');
+// let twoUserNumber = prompt('Enter number');
+
+// for(let i = oneUserNumber; i <= twoUserNumber; i++) {
+
+//     if(oneUserNumber === null || twoUserNumber === null) {
+//         alert('You do not enter number');
+//     } else if(isNaN(oneUserNumber) || isNaN(twoUserNumber)) {
+//         alert('Enter number!');
+//     } else if(twoUserNumber <= oneUserNumber) {
+//         alert('The second number must be greate than the first!');
+//     } else {
+
+//         let result = i * i;
+//         alert(`the square of the number ${i} is ${result} `)
+
+//     }
+
+// }
