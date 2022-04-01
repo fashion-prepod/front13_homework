@@ -53,3 +53,26 @@
 //     console.log(a);
 //   }
 // }
+
+// //Task_4
+// Написать программу, которая выводит среднее
+// арифметическое n чисел введенных пользователем.
+// Ввод чисел прекращается
+// тогда, когда нажали «отмена», после чего выводится
+// среднее арифметическое.
+
+// let sum = 0;
+// for (a = 0; ; a++) {
+//   let num = prompt("enter your numbers");
+//   if (isNaN(num) || num === "") {
+//     alert("wrong value: enter your numbers");
+//     break;
+//   }
+//   if (num !== null) {
+//     num = +num;
+//     sum += num;
+//   } else {
+//     alert("result: " + sum / a);
+//     break;
+//   }
+// }
