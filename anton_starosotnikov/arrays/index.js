@@ -31,3 +31,25 @@
 //     }
 // }
 // console.log(arr)
+
+//Task 3 Создать массив из 10 чисел. Вывести на 
+// экран количество четных чисел из этого массива.
+
+// const arr = [23, 94, 1, 3, 6, 9, 100, 95, 89, 4];
+// let evenNum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] % 2 === 0 ? evenNum++ : null;
+// }
+// console.log(evenNum);
+
+//Task 4 Создать массив из 10 чисел. Вывести на 
+// экран наибольшее число из этого массива.
+
+const arr = [23, 94, 1, 3, 6, 9, 100, 95, 89, -4];
+let num = arr[0];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > num) {
+        num = arr[i];
+    }
+}
+console.log(num);
