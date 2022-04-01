@@ -142,3 +142,33 @@
 //     }
 // }
 
+// //Task_7
+// Пользователь вводит два числа n и m, с помощью цикла вывести квадраты всех
+// чисел от n до m.
+// Например:
+// Ввели число 2
+// Ввели число 5
+// выводим: 2*2 потом 3*3 потом 4*4 потом 5*5
+
+// for (let a = 0; ; a++) {
+//   let userNumberOne = prompt("enter your number N");
+//   let userNumberTwo = prompt("enter your number M");
+//   if (
+//     isNaN(userNumberOne) ||
+//     isNaN(userNumberTwo) ||
+//     userNumberOne === "" ||
+//     userNumberTwo === "" ||
+//     userNumberOne === null ||
+//     userNumberTwo === null
+//   ) {
+//     alert("enter your numbers");
+//     continue;
+//   }
+//   userNumberOne = +userNumberOne;
+//   userNumberTwo = +userNumberTwo;
+//   for (let i = userNumberOne; i <= userNumberTwo; i++) {
+//     let multiplication = `${i} * ${i}`;
+//     alert(multiplication);
+//   }
+// }
+
