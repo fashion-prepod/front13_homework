@@ -257,3 +257,25 @@
 //   alert(`${data} year ${userNumber}years old`);
 // }
 
+//Task_3;
+// Пользователя спрашивают пароль
+// если пароль введен неправильно, спрашивать еще раз
+// если правильно, вывести 'добро пожаловать'
+// если отмена, вывести 'вход отменен'
+
+// let userPassword = prompt("enter your password");
+// let good = "good";
+// for (let i = 0; ; i++) {
+//   if (userPassword === good) {
+//     alert("welcome");
+//     break;
+//   } else if (userPassword === null) {
+//     alert("entry canceled");
+//     break;
+//   }
+//   if (userPassword !== good) {
+//     userPassword = prompt("enter your password");
+//     continue;
+//   }
+// }
+
