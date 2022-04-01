@@ -212,3 +212,22 @@
 //     console.log(`In ${userYearOfBirth} the user was ${userAge} year old`);
 //     userAge++;
 // }
+
+
+// 2.2
+// Пользователь вводит свой возраст. Вывести в консоль 
+// сколько лет будет пользователю каждый год до 2030
+// например: вводим 14:
+// выводим:
+// в 2023 будет 15
+// в 2024 будет 16
+// и тд
+// в 2023 будет 22
+
+
+// let userAge = +prompt('Enter your age', '');
+
+// for(let year = 2022; year <= 2030; year++) {
+//     console.log(`In ${year} the user will be ${userAge} years old`);
+//     userAge++;
+// }
