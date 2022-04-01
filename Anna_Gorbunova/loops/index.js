@@ -164,3 +164,30 @@
 //     }
 
 // }
+
+
+// 10
+// Написать программу-заику. Пользователь вводит число. Вывести количество "за"
+// (в слове "заика") равное этому числу.
+// Например:
+// Вводим 3
+// Программа выводит "зазазаика"
+// Вводим 5
+// Программа выводит "зазазазазаика"
+
+// let word = 'ика';
+// let userNumber = prompt('Enter number');
+
+
+// if (userNumber === null) {
+//     alert('goodbye!');
+// } else if (userNumber === '' || isNaN(userNumber)) {
+//     alert('Enter number!');
+// } else {
+
+//     for (let i = 1; i <=  userNumber; i++ ) {
+//         word = 'за' + word;       
+//     }
+    
+//     alert(word);
+// }
