@@ -3,10 +3,10 @@
 //*1
 // Создать массив из 10ти элементов и вывести на экран сумму всех элементов массива.
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arrayOfTenNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
-for(let i = 0; i<array.length; i++) {
-    sum += array[i];
+for(let i = 0; i<arrayOfTenNums.length; i++) {
+    sum += arrayOfTenNums[i];
 }
 
 console.log(sum);
@@ -14,12 +14,12 @@ console.log(sum);
 //*2
 // Найти среднее арифметическое значение элементов массива, которые стоят на четных местах.
 
-let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arrayForAverageNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 let sum1 = 0;
 let count = 0;
-for(let i = 0; i < array1.length; i+=2) {
-    sum1 += array1[i];
+for(let i = 0; i < arrayForAverageNum.length; i+=2) {
+    sum1 += arrayForAverageNum[i];
     count++;
 }
 
@@ -38,99 +38,100 @@ for(let i = 0; i<initialArray.length; i++) {
   
 }
 console.log(resultArray);
+
 //!2 part
 //*1
 //Автоматически заполнить массив нулями, кроме первого и последнего элементов, которые должны быть единицами. (Количество элементов массива: 8)
 
-let array3 = [];
+let arrayOfZerosAndOnes = [];
 
 for(let i = 0; i<8; i++) {
-    (i === 0 || i === 7) ? array3[i] = 1 : array3[i] = 0;
+    (i === 0 || i === 7) ? arrayOfZerosAndOnes[i] = 1 : arrayOfZerosAndOnes[i] = 0;
 }
 
-console.log(array3);
+console.log(arrayOfZerosAndOnes);
 
 //*2
 // Заполнить массив нулями и единицами, при этом данные значения чередуются, начиная с нуля
 
-let array4 = [];
+let zerosAndOnes = [];
 
 for(let i = 0; i < 10; i++) {
-    array4[i] = i % 2 === 0 ? 0 : 1;
+    zerosAndOnes[i] = i % 2 === 0 ? 0 : 1;
 }
 
-console.log(array4);
+console.log(zerosAndOnes);
 
 //*3 
 //Заполнить массив последовательными нечетными числами начиная с единицы. (Количество элементов массива: 8)
 
-let array5 = [];
+let arrayOfOdds = [];
 
 let Value = 1;
 for(let i = 0; i < 8; i++) {
-    array5[i] = Value;
+    arrayOfOdds[i] = Value;
     Value += 2;
 }
 
-console.log(array5);
+console.log(arrayOfOdds);
 
 //*4
 // Сформировать массив из чисел, которые делятся на 3 (Количество элементов массива: 8)
 
-let array6 = [];
+let arrayOfDividedByThree = [];
 let value = 3;
 
 for(let i = 0; i < 8; i++) {
-    array6[i] = value;
+    arrayOfDividedByThree[i] = value;
     value += 3;
 }
 
-console.log(array6);
+console.log(arrayOfDividedByThree);
 //!3 part
 
 //*1
 // С помощью цикла создать массив, каждый элемент которого равен квадрату своего номера.
-let array7 = [];
+let arrayOfSquares = [];
 
 for(let i = 0; i < 10; i++) {
-    array7[i] = i*i;
+    arrayOfSquares[i] = i**2;    
 }
 
-console.log(array7);
+console.log(arrayOfSquares);
 
 //*2 
 // С помощью цикла создать массив, который одинаково читается как слева направо, так и справа налево (Количество элементов массива: 9).
 
-let array8 = [];
+let mirrorArray = [];
 let num = 1;
 for(let i = 0; i<9; i++) {
-    array8[i] = num;
+    mirrorArray[i] = num;
     i < 4 ? num++ : num--;
 }
 
-console.log(array8);
+console.log(mirrorArray);
 
 //*3
 //. Создать массив из 10 чисел. Вывести на экран количество четных чисел из этого массива.
 
-let array9 = [2, 3, 4, 5, 6, 77, 8, 22, 11, 12];
+let arrayForTenNums = [2, 3, 4, 5, 6, 77, 8, 22, 11, 12];
 
-let count1 = 0;
+let countOfEven = 0;
 
-for(let i = 0; i<array9.length; i++) {
-    if (array9[i] % 2 === 0) count1++  
+for(let i = 0; i<arrayForTenNums.length; i++) {
+    if (arrayForTenNums[i] % 2 === 0) countOfEven++  
 }
 
-console.log(count1);
+console.log(countOfEven);
 
 //*4
 //Создать массив из 10 чисел. Вывести на экран наибольшее число из этого массива.
 
-let array10 = [2, 3, 4, 5, 6, 77, 8, 222, 11, 12];
+let arrayOfNums = [2, 3, 4, 5, 6, 77, 8, 222, 11, 12];
 
-let maxValue = array10[0];
-for(let i = 0; i<array10.length; i++) {
-    if(array10[i]>maxValue) maxValue = array10[i];
+let maxValue = arrayOfNums[0];
+for(let i = 0; i<arrayOfNums.length; i++) {
+    if(arrayOfNums[i]>maxValue) maxValue = arrayOfNums[i];
 }
 
 console.log(maxValue);
