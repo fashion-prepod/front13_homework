@@ -98,7 +98,7 @@ function superSum(n, sum) {
     }
 }
 
-console.log(SuperSum(7, 0));
+console.log(superSum(7, 0));
 
 //*2
 
