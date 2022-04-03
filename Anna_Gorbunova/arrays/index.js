@@ -39,3 +39,18 @@
 //     }
 // }
 // console.log(even);
+
+
+// 4
+// Создать массив из 10 чисел. Вывести на экран
+// наибольшее число из этого массива
+
+// const arrNumbers = [24, 8, 89, 45, 5, 34, 9, 65, 90, 59];
+// let max = arrNumbers[0];
+
+// for (let i = 1; i < arrNumbers.length; i++) {
+//   if (max < arrNumbers[i]) {
+//     max = arrNumbers[i];
+//   }
+// }
+// console.log(max);
