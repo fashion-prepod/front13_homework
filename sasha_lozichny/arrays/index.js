@@ -2,9 +2,22 @@
 // С помощью цикла создать массив, каждый элемент
 // которого равен квадрату своего номера.
 
-const arr = [];
-let sizeArray = 8;
-for (i = 0; arr.length !== sizeArray; i++) {
-  arr[i] = i * i;
+// const arr = [];
+// let sizeArray = 8;
+// for (i = 0; arr.length !== sizeArray; i++) {
+//   arr[i] = i * i;
+// }
+// alert(arr);
+
+//Task_3
+// Создать массив из 10 чисел. Вывести на экран
+// количество четных чисел из этого массива.
+
+const arr = [2, 34, 5, 27, 56, 8, 10, 21, 99, 78];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0) {
+    sum++;
+  }
 }
-alert(arr);
+alert(sum);
