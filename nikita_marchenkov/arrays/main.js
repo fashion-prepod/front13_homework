@@ -5,7 +5,7 @@
 
 let arrayOfTenNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
-for(let i = 0; i<arrayOfTenNums.length; i++) {
+for (let i = 0; i < arrayOfTenNums.length; i++) {
     sum += arrayOfTenNums[i];
 }
 
@@ -18,12 +18,12 @@ let arrayForAverageNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 let sum1 = 0;
 let count = 0;
-for(let i = 0; i < arrayForAverageNum.length; i+=2) {
+for (let i = 0; i < arrayForAverageNum.length; i += 2) {
     sum1 += arrayForAverageNum[i];
     count++;
 }
 
-console.log(sum1/count);
+console.log(sum1 / count);
 
 //*3
 // Создать массив, элементы которого равны элементам исходного массива, но с противоположными знаками. (Длина исходного массива должна быть не меньше 10ти элементов)
@@ -31,11 +31,11 @@ console.log(sum1/count);
 let initialArray = [1, -2, 54, 11, -22, -234, 4442, 121, -11, 3, -34];
 let resultArray = [];
 
-for(let i = 0; i<initialArray.length; i++) {
-  //resultArray[i] = -initialArr[i];
-  let el = -initialArray[i];
-  resultArray.push(el)
-  
+for (let i = 0; i < initialArray.length; i++) {
+    //resultArray[i] = -initialArr[i];
+    let el = -initialArray[i];
+    resultArray.push(el)
+
 }
 console.log(resultArray);
 
@@ -45,8 +45,8 @@ console.log(resultArray);
 
 let arrayOfZerosAndOnes = [];
 
-for(let i = 0; i<8; i++) {
-    (i === 0 || i === 7) ? arrayOfZerosAndOnes[i] = 1 : arrayOfZerosAndOnes[i] = 0;
+for (let i = 0; i < 8; i++) {
+    arrayOfZerosAndOnes[i] = (i === 0 || i === 7) ? 1 : 0;
 }
 
 console.log(arrayOfZerosAndOnes);
@@ -56,7 +56,7 @@ console.log(arrayOfZerosAndOnes);
 
 let zerosAndOnes = [];
 
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
     zerosAndOnes[i] = i % 2 === 0 ? 0 : 1;
 }
 
@@ -67,10 +67,10 @@ console.log(zerosAndOnes);
 
 let arrayOfOdds = [];
 
-let Value = 1;
-for(let i = 0; i < 8; i++) {
-    arrayOfOdds[i] = Value;
-    Value += 2;
+let number = 1;
+for (let i = 0; i < 8; i++) {
+    arrayOfOdds[i] = number;
+    number += 2;
 }
 
 console.log(arrayOfOdds);
@@ -81,7 +81,7 @@ console.log(arrayOfOdds);
 let arrayOfDividedByThree = [];
 let value = 3;
 
-for(let i = 0; i < 8; i++) {
+for (let i = 0; i < 8; i++) {
     arrayOfDividedByThree[i] = value;
     value += 3;
 }
@@ -93,8 +93,8 @@ console.log(arrayOfDividedByThree);
 // С помощью цикла создать массив, каждый элемент которого равен квадрату своего номера.
 let arrayOfSquares = [];
 
-for(let i = 0; i < 10; i++) {
-    arrayOfSquares[i] = i**2;    
+for (let i = 0; i < 10; i++) {
+    arrayOfSquares[i] = i ** 2;
 }
 
 console.log(arrayOfSquares);
@@ -104,9 +104,13 @@ console.log(arrayOfSquares);
 
 let mirrorArray = [];
 let num = 1;
-for(let i = 0; i<9; i++) {
+for (let i = 0; i < 9; i++) {
     mirrorArray[i] = num;
-    i < 4 ? num++ : num--;
+    if (i < 4) {
+        num++
+    } else {
+        num--
+    }
 }
 
 console.log(mirrorArray);
@@ -118,8 +122,8 @@ let arrayForTenNums = [2, 3, 4, 5, 6, 77, 8, 22, 11, 12];
 
 let countOfEven = 0;
 
-for(let i = 0; i<arrayForTenNums.length; i++) {
-    if (arrayForTenNums[i] % 2 === 0) countOfEven++  
+for (let i = 0; i < arrayForTenNums.length; i++) {
+    if (arrayForTenNums[i] % 2 === 0) countOfEven++
 }
 
 console.log(countOfEven);
@@ -130,8 +134,8 @@ console.log(countOfEven);
 let arrayOfNums = [2, 3, 4, 5, 6, 77, 8, 222, 11, 12];
 
 let maxValue = arrayOfNums[0];
-for(let i = 0; i<arrayOfNums.length; i++) {
-    if(arrayOfNums[i]>maxValue) maxValue = arrayOfNums[i];
+for (let i = 0; i < arrayOfNums.length; i++) {
+    if (arrayOfNums[i] > maxValue) maxValue = arrayOfNums[i];
 }
 
 console.log(maxValue);
