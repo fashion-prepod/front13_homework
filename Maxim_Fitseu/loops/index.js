@@ -61,15 +61,15 @@
 // каждое последующее число должно быть больше предыдущего, иначе вывести
 // ошибку.
 
-// let number =+prompt("Enter number");
-// let nextNumber = number;
-// for (let i = 0; i < 5; i++) {
-//     number=+prompt("Enter number");
-//     if (number < nextNumber) {
-//         console.log("Mistake");
-//         break;
-//     }
-// }
+let number = +prompt("Enter number");
+for (let i = 0; i < 4; i++) {
+   let nextNumber = +prompt("Enter number");
+    if (number >= nextNumber) {
+        console.log("Mistake");
+        break;
+    }
+    number = nextNumber;
+}
 
 // 10.
 
@@ -135,20 +135,20 @@
 // если правильно вывести "добро пожаловать"
 // если отмена вывести "вход отменен"
 
-let password = prompt('Enter password');
-let checkPass;
-for (let i = 0; i < Infinity; i++) {
-    checkPass = prompt('Enter password');
-    if (checkPass === password) {
-        console.log('Correct password');
-        break;
-    } else if (checkPass === null) {
-        console.log('Enter cancelled');
-        break;
-    } else if (checkPass !== password) {
-        console.log('Uncorrect password');
-    }
-}
+// let password = prompt('Enter password');
+// let checkPass;
+// for (let i = 0; ; i++) {
+//     checkPass = prompt('Enter password');
+//     if (checkPass === password) {
+//         console.log('Correct password');
+//         break;
+//     } else if (checkPass === null) {
+//         console.log('Enter cancelled');
+//         break;
+//     } else if (checkPass !== password) {
+//         console.log('Uncorrect password');
+//     }
+// }
 
 // 4. Пользователь вводит число n, вывести на экран все четные числа от 1 до n
 
