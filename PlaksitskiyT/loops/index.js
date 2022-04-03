@@ -31,39 +31,29 @@
 
 // Здравствуйте все равно не получается... D  этом варианте все вроде логично и правильно , цикл будет выполняться пока пароли не совпадут , но я не могу понять почему он не останавливается  после ввода верного  и не срабатывает
 
-
+// console.log('fsdfs0');
 // let pass = prompt('Enter your password');
 // let truePass = '1986';
-// for(;pass !== truePass;){
+// for(;;){
+  
+
 //   if(pass === null) {
 //     console.log('you canceled');
 //     break;
-//   } else if(pass === truePass){
-//   console.log('Hello Tima');
+//   } 
+//   if(pass === truePass) {
+//   alert('Hello Tima');
 //   break;
 //   } else if(pass !== truePass){
-//     prompt('Enter your password');
+//    pass = prompt('Enter your password');
 //   }
   
 // }
 
 // В этом варианте все проходит как нужно, но только если пользователь вводит один раз неверно , а если второй раз то прекращается вывод поля pass. Как сделать так чтобы это  поле отрабатывало пока верный не введут?
 
-// let truePass = '1986';
-// for (;;) {
-//   let pass = prompt('Enter your password');
-//   if (pass === null) {
-//     alert('you canceled');
-//     break;
-//   } 
-//   if (pass === truePass){
-//   alert('Hello Tima');
-//     break;
-//   } else {
-//     prompt('Enter your password');
-//     break;
-//   }
-// }
+// 
+
 
 // 4. Пользователь вводит число n, вывести на экран все четные числа от 1 до n
 
