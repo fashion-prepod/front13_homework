@@ -24,3 +24,18 @@
 //     arr[i] = i * i;
 // }
 // console.log(arr);
+
+
+// 3
+// Создать массив из 10 чисел. Вывести на экран
+// количество четных чисел из этого массива
+
+// const arrNumbers = [5, 22, 10, 18, 9, 6, 40, 44, 13, 76];
+// let even = 0;
+
+// for (let i = 0; i < arrNumbers.length; i++) {
+//     if (arrNumbers[i] % 2 === 0) {
+//         even++;
+//     }
+// }
+// console.log(even);
