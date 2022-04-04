@@ -18,14 +18,15 @@
 // 3. Создайте новый массив только из тех имен, которые есть в обоих массивах
 // 4. Объедините два массива так, чтобы в получившемся массиве не было одинаковых имен
 
-let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
-let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
 
 // const userName = prompt('Enter name');
 
 // for (let i = 0; i < people1.length; i++) {
 //     if (people1[i] === userName) {
 //         people2.push(userName);
+//         break;
 //     }
 // }
 // console.log(people2);
