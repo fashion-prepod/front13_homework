@@ -46,3 +46,16 @@
 //     console.log(arr[i]);
 //   } else {}
 // }
+
+//Создать массив из 10 чисел. Вывести на экран наибольшее число из этого массива.
+
+// const arr = [5,69,84,509,348,590,37,420,70];
+// let maxNum = arr[0];
+// for (let i = 0; arr.length > i; i++) {
+//   if ( arr[i] > maxNum ) {
+//     maxNum = arr[i];
+//   } else {
+
+//   }
+// }
+// console.log(maxNum);
