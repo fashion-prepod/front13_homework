@@ -92,47 +92,29 @@ if ((userNumber === null || isNaN(userNumber)) && sum !== 0) {
 // Если пользователь ввел правильное произведение вывести собщение что он молодец!
 // Если нет, выводим пользователю правильный ответ.
 
-cikl: do {
-    let userNumberOne;
-    let userNumberTwo;
-    let userProductNumbers;
-    do {
-        userNumberOne = prompt("Enter number one");
-        if (isNaN(userNumberOne) || userNumberOne === '') {
-            console.log('Try enter a number');
-        } else if (userNumberOne === null) {
-            console.log('You left the program');
-            break cikl;
-        }
-    } while (isNaN(userNumberOne) || userNumberOne === '')
-    userNumberOne = +userNumberOne;
-    do {
-        userNumberTwo = prompt("Enter number two");
-        if (isNaN(userNumberTwo) || userNumberTwo === '') {
-            console.log('Try enter a number');
-        } else if (userNumberTwo === null) {
-            console.log('You left the program');
-            break cikl;
-        }
-    } while (isNaN(userNumberTwo) || userNumberTwo === '')
-    userNumberTwo = +userNumberTwo;
-    do {
-        userProductNumbers = prompt(`Enter product of numbers ${userNumberOne}*${userNumberTwo}`);
-        if (isNaN(userProductNumbers) || userProductNumbers === '') {
-            console.log('Try enter a number');
-        } else if (userProductNumbers === null) {
-            console.log('You left the program');
-            break cikl;
-        }
-    } while (isNaN(userProductNumbers) || userProductNumbers === '')
-    userProductNumbers = +userProductNumbers;
-    let productNumbers = userNumberOne * userNumberTwo;
-    if (productNumbers === userProductNumbers) {
+do {
+    let userNumberOne = prompt("Enter number one");
+    if (userNumberOne === null || isNaN(userNumberOne) || userNumberOne === '') {
+        console.log('dont work');
+        break;
+    }
+    let userNumberTwo = prompt("Enter number two");
+    if (userNumberTwo === null || isNaN(userNumberTwo) || userNumberTwo === '') {
+        console.log('dont work');
+        break;
+    }
+    let userProductNumbers = prompt(`Enter product of numbers ${userNumberOne}*${userNumberTwo}`);
+    if (userProductNumbers === null || isNaN(userProductNumbers) || userProductNumbers === '') {
+        console.log('dont work');
+        break;
+    }
+    let productNumbers = +userNumberOne * +userNumberTwo
+    if (+productNumbers === +userProductNumbers) {
         console.log("молодец");
     } else {
         console.log(productNumbers);
     }
-} while (true)
+} while (false);
 
 
 
@@ -225,25 +207,20 @@ if (userNumber !== null && !isNaN(userNumber) && userNumber !== '') {
 // ошибку.
 
 let userNumber;
-cikl: for (let i = 1; i < 6; i++) {
+for (let i = 1; i < 6; i++) {
     let number = userNumber;
-    do {
-        userNumber = prompt(`Enter number ${i}`);
-        if (isNaN(userNumber) || userNumber === '') {
-            console.log('Try enter a number');
-        } else if (userNumber === null) {
-            console.log('You left the program');
-            break cikl;
-        }
-    } while (userNumber === '' || isNaN(userNumber))
-    if (userNumber !== null && !isNaN(userNumber)) {
-        if (number > userNumber) {
-            console.log('error');
-            break;
-        }
+    userNumber = prompt(`Enter number ${i}`);
+    if (isNaN(userNumber) || userNumber === '') {
+        console.log('Try enter a number');
+        break;
+    } else if (userNumber === null) {
+        console.log('You left the program');
+        break;
+    } else if (number > userNumber) {
+        console.log('error');
+        break;
     }
 }
-
 
 
 // 10. Написать программу-заику. Пользователь вводит число. Вывести количество "за"
@@ -304,8 +281,8 @@ else {
 let userYear = prompt('Enter your years old');
 if (userYear !== null && !isNaN(userYear) && userYear !== '' && +userYear <= 100) {
     userYear = +userYear;
-    for (let Year = 2023; Year <= 2030; Year++) {
-        console.log(`in ${Year} will be ${++userYear}`);
+    for (let year = 2023; year <= 2030; year++) {
+        console.log(`in ${year} will be ${++userYear}`);
     }
 } else {
     console.log('dont work');
