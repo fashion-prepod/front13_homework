@@ -46,3 +46,15 @@
 // }
 //   console.log(newArr);
 
+//Task_2.4 Даны два массива
+// 4. Объедините два массива так, чтобы в получившемся массиве не было одинаковых имен
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let newArr = [];
+// for (let i = 0; i < people1.length; i++) {
+//     if (people1.includes(people2[i]) === false) {
+//       newArr.push(people2[i]);
+//     }
+//   }
+// let newArr2 = newArr.concat(people1);
+//     console.log(newArr2);
