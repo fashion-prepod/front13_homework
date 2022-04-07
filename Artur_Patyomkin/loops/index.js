@@ -56,19 +56,30 @@
 // если правильно вывести "добро пожаловать"
 // если отмена вывести "вход отменен"
 
-const password = '123check';
-let infinitLoop = true;
-while (infinitLoop) {
-   let userPassword = prompt('enter your password');
-   if (userPassword === null) {
-      console.log('entering is cancelled');
-      infinitLoop = false;
-   } else {
-      if (password === userPassword) {
-         console.log('you are wellcome!!!');
-         break;                               //проверочка другого способа выйти из цикла
-      } else {
-         console.log('wrong password! try again');
-      }
+// const password = '123check';
+// let infinitLoop = true;
+// while (infinitLoop) {
+//    let userPassword = prompt('enter your password');
+//    if (userPassword === null) {
+//       console.log('entering is cancelled');
+//       infinitLoop = false;
+//    } else {
+//       if (password === userPassword) {
+//          console.log('you are wellcome!!!');
+//          break;                               //проверочка другого способа выйти из цикла
+//       } else {
+//          console.log('wrong password! try again');
+//       }
+//    }
+// }
+
+
+// 4. Пользователь вводит число n, вывести на экран все четные числа от 1 до n
+
+let userNumber = +prompt('enter your number:');
+
+for (let i = 1; i <= userNumber; i++) {
+   if (i % 2 === 0) {
+      console.log(i);
    }
 }
