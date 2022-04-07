@@ -37,11 +37,27 @@
 // 4. Создать массив из 10 чисел. Вывести на экран
 // количество четных чисел из этого массива.
 
-const arr = [4, 44, 6, 99, 5, 3, 65, 2, 1, 67];
-let amount = 0;
+// const arr = [4, 44, 6, 99, 5, 3, 65, 2, 1, 67];
+// let amount = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 0) {
+//     amount++;
+//   }
+// }
+// console.log(amount);
+
+// 5. Создать массив из 10 чисел. Вывести на экран
+// наибольшее число из этого массива.
+
+const arr = [4, 102, 6, 99, 5, 3, 600, 2, 1, 67];
+const newArr = [];
 for (let i = 0; i < arr.length; i++) {
-  if (arr[i] % 2 === 0) {
-    amount++;
+  newArr[i] = arr[i];
+}
+for (let j = 0; j < newArr.length - 1; j++) {
+  if (newArr[newArr.length - 1] > newArr[j]) {
+  } else {
+    newArr[(newArr.length = newArr.length - 1)];
   }
 }
-console.log(amount);
+console.log(newArr[newArr.length - 1]);
