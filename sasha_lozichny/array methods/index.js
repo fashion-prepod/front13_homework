@@ -34,3 +34,15 @@
 //   }
 // }
 
+//Task_2.3 Даны два массива
+//3. Создайте новый массив только из тех имен, которые есть в обоих массивах
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let newArr = [];
+// for (let i = 0; i < people1.length; i++) {
+//    if (people2.indexOf(people1[i]) >= 0) {
+//       newArr.push(people1[i]);
+//    }
+// }
+//   console.log(newArr);
+
