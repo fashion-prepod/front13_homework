@@ -19,3 +19,16 @@ for (i = 0; i <= 10; i++) {
     }
 }
 console.log(number);
+
+
+
+// 3. Создать массив из 10 чисел.Вывести на экран наибольшее число из этого массива.
+
+const arr = [23, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let number = 0;
+for (i = 0; i <= arr.length; i++) {
+    if (number < arr[i]) {
+        number = arr[i];
+    }
+}
+console.log(number);
