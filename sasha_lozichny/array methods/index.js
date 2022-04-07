@@ -11,12 +11,26 @@
 // Task_2.1 Даны два массива
 // 1. Пользователь вводит имя, если это имя есть в массиве1 добавьте его копию в массив2
 
-let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
-let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
-let userName = prompt("enter your name");
-for (let i = 0; i < people1.length; i++) {
-  if (userName === people1[i]) {
-    people2.push(userName);
-  }
-}
-  console.log(people2);
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let userName = prompt("enter your name");
+// for (let i = 0; i < people1.length; i++) {
+//   if (userName === people1[i]) {
+//     people2.push(userName);
+//   }
+// }
+//   console.log(people2);
+
+// Task_2.2 Даны два массива
+// 2. Пользователь вводит имя, если это имя есть в массиве2 удалите это имя из массива
+
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let userName = prompt("enter your name");
+// for (let i = 0; i < people2.length; i++) {
+//   if (userName === people2[i]) {
+//     people2.splice(i, 1);
+//     console.log(people2);
+//   }
+// }
+
