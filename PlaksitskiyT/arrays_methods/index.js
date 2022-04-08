@@ -29,19 +29,31 @@
 
 // 2. Пользователь вводит имя, если это имя есть в массиве2 удалите это имя из массива
 
-let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
-let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
 
-const userName = prompt('Enter name');
-for ( let i = 0; people2.length > i; i++) {
-if (userName === people2[i]) {
-  people2.splice(i, 1);
-} else {
-  
-}
-}
-console.log(people2);
+// const userName = prompt('Enter name');
+// for ( let i = 0; people2.length > i; i++) {
+// if (userName === people2[i]) {
+//   people2.splice(i, 1);
+// } else {
+
+// }
+// }
+// console.log(people2);
 
 
 // 3. Создайте новый массив только из тех имен, которые есть в обоих массивах
 // 4. Объедините два массива так, чтобы в получившемся массиве не было одинаковых именgit
+
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// newArr = [];
+// for(let i = 0; people1.length > i; i++){
+//   for (let j = 0; people2.length > j; j++){
+//     if (people1[i] === people2[j]) {
+//       newArr.push(people1[i]);
+//     }
+//   }
+// }
+// console.log(newArr);
