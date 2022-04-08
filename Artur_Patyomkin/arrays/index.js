@@ -80,8 +80,8 @@
 // 3. Создайте новый массив только из тех имен, которые есть в обоих массивах
 // 4. Объедините два массива так, чтобы в получившемся массиве не было одинаковых имен
 
-let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
-let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
 // let userName = prompt('enter name');
 
 // for (let i = 0; i < people1.length; i++) {
@@ -101,14 +101,28 @@ let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 
 // console.log(people1);
 // console.log(people2);
 
+// let newPeople = [];
+// for (let i = 0; i < people1.length; i++) {
+//    for (let j = 0; j < people2.length; j++) {
+//       if (people1[i] === people2[j]) {
+//          newPeople.unshift(people1[i]);
+//       }
+//    }
+// }
+// console.log(people1);
+// console.log(people2);
+// console.log(newPeople);
+
+
+// 4. Объедините два массива так, чтобы в получившемся массиве не было одинаковых имен
+let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
 let newPeople = [];
 for (let i = 0; i < people1.length; i++) {
    for (let j = 0; j < people2.length; j++) {
       if (people1[i] === people2[j]) {
-         newPeople.unshift(people1[i]);
+         people2.splice(j, 1);
       }
    }
 }
-console.log(people1);
-console.log(people2);
-console.log(newPeople);
+console.log(people2.concat(people1));
