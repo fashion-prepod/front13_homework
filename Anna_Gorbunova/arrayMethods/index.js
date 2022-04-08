@@ -41,3 +41,20 @@
     
 // }
 // console.log(newArr);
+
+
+// 4. 
+// Объедините два массива так, чтобы в получившемся массиве не было одинаковых имен
+
+// let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+// let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+// let newArr = [];
+
+// for (let i = 0; i < people1.length; i++) {
+//     if (people2.includes(people1[i])) {
+//         continue;
+//     } else {
+//         newArr.push(people1[i]);
+//     }
+// }
+// console.log(people2.concat(newArr));
