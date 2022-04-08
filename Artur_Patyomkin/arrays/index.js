@@ -54,12 +54,21 @@
 
 // 3.4 Создать массив из 10 чисел. Вывести на экран наибольшее число из этого массива.
 
-let arr = [2, 43, 23, 5, 10, 48, 36, 17, 29, 12];
-let maxValue = arr[0];
+// let arr = [2, 43, 23, 5, 10, 48, 36, 17, 29, 12];
+// let maxValue = arr[0];
 
-for (let i = 0; i < arr.length; i++) {
-   if (arr[i] > maxValue) {
-      maxValue = arr[i];
-   }
-}
-console.log(maxValue);
+// for (let i = 0; i < arr.length; i++) {
+//    if (arr[i] > maxValue) {
+//       maxValue = arr[i];
+//    }
+// }
+// console.log(maxValue);
+
+
+// 4.1 Дана строка "Мы любим javascript"
+// изменить эту строку на "Мы ОБОЖАЕМ javascript"
+
+let userString = "Мы любим Javascript";
+let arr = userString.split(' ');
+arr.splice(1, 1, "ОБОЖАЕМ");
+console.log(arr);
