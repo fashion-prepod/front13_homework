@@ -22,16 +22,31 @@
 
 // 3.2 С помощью цикла создать массив, который одинаково читается как слева направо, так и справа налево (Количество элементов массива: 9).
 
-let arr = [];
-arr.length = 9;
-let userNumber = 1;
+// let arr = [];
+// arr.length = 9;
+// let userNumber = 1;
 
-for (let i = 0, j = arr.length - 1; ; i++, j--, userNumber++) {
-   if (i === j) {
-      arr[i] = userNumber;
-      break;
+// for (let i = 0, j = arr.length - 1; ; i++, j--, userNumber++) {
+//    if (i === j) {
+//       arr[i] = userNumber;
+//       break;
+//    }
+//    arr[i] = userNumber;
+//    arr[j] = arr[i];
+// }
+// console.log(arr);
+
+
+// 3.3 Создать массив из 10 чисел. Вывести на экран количество четных чисел из этого массива.
+
+let arr = [];
+let countOfEven = 0;
+
+for (let i = 0; arr.length != 10; i++) {
+   arr[arr.length] = i;
+   if (i % 2 === 0) {
+      countOfEven++;
    }
-   arr[i] = userNumber;
-   arr[j] = arr[i];
 }
 console.log(arr);
+console.log(`count of even numbers = ${countOfEven}`);
