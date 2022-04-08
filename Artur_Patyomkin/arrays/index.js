@@ -84,9 +84,18 @@ let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'R
 let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
 let userName = prompt('enter name');
 
-for (let i = 0; i < people1.length - 1; i++) {
+for (let i = 0; i < people1.length; i++) {
    if (userName === people1[i]) {
       people2.push(people1[i]);
+   }
+}
+console.log(people1);
+console.log(people2);
+
+let userName2 = prompt('enter neme');
+for (let i = 0; i < people2.length; i++) {
+   if (userName2 === people2[i]) {
+      people2.splice(i, 1);
    }
 }
 console.log(people1);
