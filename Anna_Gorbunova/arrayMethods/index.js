@@ -23,7 +23,9 @@
 // const userName = prompt('Enter name', '');
 
 // let indexName = people2.indexOf(userName);
-// people2.splice(indexName, 1);
+// if (indexName > -1) {
+//     people2.splice(indexName, 1);
+// }
 // console.log(people2);
 
 
