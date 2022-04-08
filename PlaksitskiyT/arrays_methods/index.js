@@ -44,7 +44,6 @@
 
 
 // 3. Создайте новый массив только из тех имен, которые есть в обоих массивах
-// 4. Объедините два массива так, чтобы в получившемся массиве не было одинаковых именgit
 
 // let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
 // let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
@@ -57,3 +56,16 @@
 //   }
 // }
 // console.log(newArr);
+
+// 4. Объедините два массива так, чтобы в получившемся массиве не было одинаковых именgit
+
+let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+let newArr = [];
+
+for (let i = 0; people1.length > i; i++){
+  if (people1.includes(people2[i]) !== true ) {
+    newArr.push(people2[i]);
+    }
+}
+console.log(newArr.concat(people1));
