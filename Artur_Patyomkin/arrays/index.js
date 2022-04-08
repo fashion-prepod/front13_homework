@@ -39,14 +39,27 @@
 
 // 3.3 Создать массив из 10 чисел. Вывести на экран количество четных чисел из этого массива.
 
-let arr = [];
-let countOfEven = 0;
+// let arr = [];
+// let countOfEven = 0;
 
-for (let i = 0; arr.length != 10; i++) {
-   arr[arr.length] = i;
-   if (i % 2 === 0) {
-      countOfEven++;
+// for (let i = 0; arr.length != 10; i++) {
+//    arr[arr.length] = i;
+//    if (i % 2 === 0) {
+//       countOfEven++;
+//    }
+// }
+// console.log(arr);
+// console.log(`count of even numbers = ${countOfEven}`);
+
+
+// 3.4 Создать массив из 10 чисел. Вывести на экран наибольшее число из этого массива.
+
+let arr = [2, 43, 23, 5, 10, 48, 36, 17, 29, 12];
+let maxValue = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+   if (arr[i] > maxValue) {
+      maxValue = arr[i];
    }
 }
-console.log(arr);
-console.log(`count of even numbers = ${countOfEven}`);
+console.log(maxValue);
