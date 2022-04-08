@@ -12,11 +12,10 @@ console.log("Hello");
 // в 2022 было 19 год
 let age = +prompt("Введите ваш год рождения");
 let currentAge = 0;
-    for(let i = age; i<=2022; i++) {
-
-        console.log("В " + i + " было " + currentAge);
-        currentAge++;
-    }
+for (let i = age; i <= 2022; i++) {
+    console.log("В " + i + " было " + currentAge);
+    currentAge++;
+}
 
 //*2
 // Пользователь вводит свой возраст. Вывести в консоль 
@@ -31,7 +30,7 @@ let age2 = +prompt("Введите ваш возраст");
 
 for (let i = 2022; i <= 2030; i++) {
     console.log("В " + i + " будет " + age);
-    age++
+    age2++;
 }
 
 //*3
@@ -41,7 +40,7 @@ for (let i = 2022; i <= 2030; i++) {
 // если отмена вывести "вход отменен"
 let password = prompt("Придумайте пароль");
 let answer;
-for (let i = 0; i < Infinity; i++) {
+for (let i = 0; ; i++) {
     answer = prompt("Введте ваш пароль");
     if (answer === password) {
         alert("Добро пожаловать");
@@ -74,24 +73,24 @@ if (userNumber !== null && !isNaN(userNumber) && userNumber > 1) {
     for (let i = 1; i < userNumber; i++) {
         sum = sum + i;
     }
-    alert("Sum from 1 to " + userNumber +  " = " + sum)
+    alert("Sum from 1 to " + userNumber + " = " + sum)
 
 } else {
     console.log("Wrong type");
 }
 
 //Ещё вариант :)
-function SuperSum(n, sum) {   
-    if(n>=1) {
+function superSum(n, sum) {
+    if (n >= 1) {
         sum = sum + n;
         n = n - 1;
-        return SuperSum(n, sum)
+        return superSum(n, sum)
     } else {
         return sum;
     }
 }
 
-console.log(SuperSum(7, 0));
+console.log(superSum(7, 0));
 
 //*2
 
@@ -112,8 +111,8 @@ let negativeCount = 0;
 let zeroCount = 0;
 
 if (numbersCount !== null && !isNaN(numbersCount) && numbersCount > 0) {
-    for(let i = 1; i <= numbersCount; i++) {
-        let currentNumber = +prompt("Введите свое " +  i + " число");
+    for (let i = 1; i <= numbersCount; i++) {
+        let currentNumber = +prompt("Введите свое " + i + " число");
         if (currentNumber > 0) positiveCount++;
         if (currentNumber === 0) zeroCount++;
         if (currentNumber < 0) negativeCount++;
@@ -128,8 +127,8 @@ alert("Положительных: " + positiveCount + " Отрицательн�
 //двузначные числа, которые делятся на 4, но не
 //делятся на 6.
 
-for(let i = 10; i < 100; i++) {
-    if(i%4 === 0 && i%6 !== 0) {
+for (let i = 10; i < 100; i++) {
+    if (i % 4 === 0 && i % 6 !== 0) {
         console.log(i);
     }
 }
@@ -143,9 +142,9 @@ for(let i = 10; i < 100; i++) {
 //среднее арифметическое.
 let num = 0;
 let sum = 0;
-for(let i = 0; i < 10000; i++) {
+for (let i = 0; ; i++) {
     let currentNumber = prompt("Введите ваше число");
-    if(currentNumber === null || isNaN(currentNumber) || currentNumber < 0 || currentNumber == undefined) {
+    if (currentNumber === null || isNaN(currentNumber) || currentNumber < 0 || currentNumber == undefined) {
         break;
     }
     num++;
@@ -164,9 +163,9 @@ alert("Среднее арифметическое = " + result);
 //вывести сообщение.
 
 let allHamsters = 100;
-for(let i = 0; i<Infinity ;i++) {
+for (let i = 0; ; i++) {
     let countOfHamsters = +prompt("Введите кол-во хомячков");
-    if(countOfHamsters < allHamsters) {
+    if (countOfHamsters < allHamsters) {
         allHamsters = allHamsters - countOfHamsters;
     } else if (countOfHamsters === allHamsters) {
         alert("Вы достали всех хомячков!");
@@ -189,16 +188,16 @@ for(let i = 0; i<Infinity ;i++) {
 let firstNum = +prompt("Введите первое число");
 let secondNum = +prompt("Введите второе число");
 
-for(let i = firstNum; i<=secondNum; i++){
-    console.log(i*i);
+for (let i = firstNum; i <= secondNum; i++) {
+    console.log(i * i);
 }
 
 //*8
 
 // Пользователь вводит число n. Написать цикл, который выводит все числа от n до 0;
 let num1 = +prompt("Введите ваше число");
-if(num1 !== null && num1 > 0 && !isNaN(num1)){
-    for(let i = num1; i>=0; i--) {
+if (num1 !== null && num1 > 0 && !isNaN(num1)) {
+    for (let i = num1; i >= 0; i--) {
         console.log(i);
     }
 }
@@ -211,10 +210,10 @@ if(num1 !== null && num1 > 0 && !isNaN(num1)){
 
 let number;
 let prevNumber;
-for(let i = 0; i<5; i++){
+for (let i = 0; i < 5; i++) {
     prevNumber = number;
     number = +prompt("Введите число");
-    if(number < prevNumber) {
+    if (number < prevNumber) {
         alert("Ошибка")
         break;
     }
@@ -234,7 +233,7 @@ let count = +prompt("Введите количество 'за'")
 
 let strResult = "";
 
-for(let i = 0; i < count; i++) {
+for (let i = 0; i < count; i++) {
     strResult = strResult + "за";
 }
 
