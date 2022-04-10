@@ -154,14 +154,76 @@
 // 4. Создать массив из 10 чисел. Вывести на экран 
 // наибольшее число из этого массива
 
-const arr = [87, 68, -1231, 15, 10, 1, 0, 123, 43, 34];
-let result = arr[0];
+// const arr = [87, 68, -1231, 15, 10, 1, 0, 123, 43, 34];
+// let result = arr[0];
 
-    for (i = 0; i < 10; i++) {
-        if (result < arr[i]) {
-            result = arr[i];
-        }
+//     for (i = 0; i < 10; i++) {
+//         if (result < arr[i]) {
+//             result = arr[i];
+//         }
+//     }
+
+// console.log(result);
+
+
+
+////// arrays methods
+
+// 1. Дана строка "We love js"
+// изменить эту строку "We like very much js"
+
+// let str = 'We love js';
+// let result = str.split(' ');
+// result.splice(1, 1, 'like', 'very', 'much');
+// let resAll = result.join(' ');
+// console.log(resAll);
+
+
+// 2. Даны 2 массива 
+// 1. Пользователь вводит имя, если это имя есть в миссиве1 добавить его копиию в массив2
+// 2. Пользователь вводит имя, если это имя есть в массиве2 удалить это имя из массива
+// 3. Создать новый массив только из тех имён, которые есть в обоих массивах
+// 4. Объеденить два массива так, что бы в получившемся массиве не было одинаковых имён
+
+let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Connor', 'David', 'Ryan'];
+let people2 = ['Connor', 'Stanley', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+let newArr = [];
+
+
+let name1 = prompt('Enter your name');
+let name2 = prompt('Enter your name');
+
+const res1 = people1.includes(name1);
+const res2 = people2.includes(name2);
+
+if (res1 === true) {
+    people2.push(name1);
+}   
+if (res2 === true) {
+    const res3 = people2.indexOf(name2);
+    people2.splice(res3, 1);
+}
+
+for (let i = 0; i < people1.length; i++) {
+    for (let j = 0; j < people2.length; j++) {
+     if (people1[i] === people2[j]) {
+        newArr.push(people1[i]);
+     }
     }
+}
 
-console.log(result);
+let newArrConcat = people1.concat(people2);
+let newArrConcatName = [];
+
+for (let i = 0; i < newArrConcat.length; i++) {
+    if (!newArrConcatName.includes(newArrConcat[i])) {
+        newArrConcatName.push(newArrConcat[i]);
+    }
+}
+
+
+console.log(people1);
+console.log(people2);
+console.log(newArr);
+console.log(newArrConcatName);
 
