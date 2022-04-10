@@ -125,22 +125,30 @@
 // одинаково читается как слева направо, так и справа 
 // налево (Количество элементов массива: 9).
 
-const arr = [];
-for (let i = 0; arr.length !== 9; ) {
-    if (arr.length < 4) {
-        arr [arr.length] = i++;
-    } else {
-        arr [arr.length] = i--;
-    }
-}
-console.log(arr)
-
-
-
+// const arr = [];
+// for (let i = 0; arr.length !== 9; ) {
+//     if (arr.length < 4) {
+//         arr [arr.length] = i++;
+//     } else {
+//         arr [arr.length] = i--;
+//     }
+// }
+// console.log(arr)
 
 // 3. Создать массив из 10 чисел. Вывести на экран 
 // количество четных чисел из этого массива.
 
+const arr = [15, 12, 432, 1312, 44, 2311, 34, 55, 19, 778];
+let res = 0;
+
+for (let i = 0; i < 10; i++) {
+    if (arr[i] % 2 === 0) {
+        res++;
+    }
+}
+
+console.log(arr);
+console.log(res);
 
 
 // 4. Создать массив из 10 чисел. Вывести на экран 
