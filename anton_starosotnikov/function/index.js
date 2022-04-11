@@ -41,3 +41,20 @@
 //     return 'Ваша годовая оценка ' + (+userValueOne + +userValueTwo + +userValueThree + +userValueFour) / 4;
 // }
 // console.log(getQuarterGrade(userValueOne, userValueTwo, userValueThree, userValueFour));
+
+
+// 3. Напишите функцию, которая возвращает процент побед и процент
+// поражений в контру или доту. Функция принимает два параметра:
+// первый это количество побед, а второй это количество поражений.
+// Функция возвращает результативность в процентах. Пример работы:
+// myStats(352,211), это значит было 352 победы и 211 поражений.
+// Функция возвращает сообщение «ваш процент побед - 62%,
+// поражений – 38%»
+
+// const myStats = function (win, defeat) {
+//     const winRate = Math.round(win/(win+defeat)*100);
+//     return `Ваш процент побед ${winRate}%, поражений - ${100 - winRate}%`;
+// }
+// console.log(myStats(352, 211));
+
+
