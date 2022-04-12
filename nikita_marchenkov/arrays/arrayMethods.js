@@ -1,4 +1,4 @@
-// 1. Дана строка "Мы любим javascript" изменить эту строку на "Мы ОБОЖАЕМ javascript"
+//* 1. Дана строка "Мы любим javascript" изменить эту строку на "Мы ОБОЖАЕМ javascript"
 
 let str = "Мы любим javascript";
 let arr = str.split(" ");
@@ -21,6 +21,7 @@ if(match !== -1) {
     //если копию имени
 }
 console.log(people2);
+
 //*2 Пользователь вводит имя, если это имя есть в массиве2 удалите это имя из массива
 let name2 = prompt("Enter a name");
 let match2 = people2.indexOf(name2);
@@ -28,6 +29,7 @@ if(match2 !== -1) {
     people2.splice(match2, 1);
 }
 console.log(people2);
+
 //*3 Создайте новый массив только из тех имен, которые есть в обоих массивах
 let result = [...people1];
 
@@ -36,6 +38,7 @@ result = result.filter(el => {
 })
 
 console.log(result);
+
 //*4 Объедините два массива так, чтобы в получившемся массиве не было одинаковых имен
 let newNamesFrom2 = people2.filter(el => {
     if(people1.indexOf(el) === -1) return el
