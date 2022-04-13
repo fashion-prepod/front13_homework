@@ -23,3 +23,21 @@
 // }
 // alert(showDay(userNumber));
 
+// 2. Написать функцию, которая возвращает годовую оценку по предмету.
+// Функция принимает 4 оценки за четверти и возвращает годовую. В
+// начале программы пользователя спршивают оценки за четверти в
+// виде «введите оценку за 1 четверть», «введите оценку за 2 четверть» и
+// т.д. В конце работы программы выводится сообщение «ваша годовая
+// оценка N».
+
+// let gradeOne = +prompt("enter grade for 1st quarter");
+// let gradeTwo = +prompt("enter grade for 2nd quarter");
+// let gradeThree = +prompt("enter grade for 3rd quarter");
+// let gradeFour = +prompt("enter grade for 4th quarter");
+
+// function getYearGrade(first, second, third, fourth) {
+//   let yaerGrade = (first + second + third + fourth) / 4;
+//   return `Your year grade ${yaerGrade}`;
+// }
+// alert(getYearGrade(gradeOne, gradeTwo, gradeThree, gradeFour));
+
