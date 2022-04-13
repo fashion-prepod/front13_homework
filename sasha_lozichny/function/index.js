@@ -41,3 +41,21 @@
 // }
 // alert(getYearGrade(gradeOne, gradeTwo, gradeThree, gradeFour));
 
+// 3. Напишите функцию, которая возвращает процент побед и процент
+// поражений в контру или доту. Функция принимает два параметра:
+// первый это количество побед, а второй это количество поражений.
+// Функция возвращает результативность в процентах. Пример работы:
+// myStats(352,211), это значит было 352 победы и 211 поражений.
+// Функция возвращает сообщение «ваш процент побед - 62%,
+// поражений – 38%»
+
+// let numberOfVictories = +prompt("enter number of victories");
+// let numbrOfDefeats = +prompt("enter number of defeats");
+
+// function getResult(firstStat, secondStat) {
+//   let sumState = firstStat + secondStat;
+//   return `Your win rate ${(firstStat / sumState) * 100}%;
+//   Your percentage of losses ${(secondStat / sumState) * 100}%.`;
+// }
+// alert(getResult(numberOfVictories, numbrOfDefeats));
+
