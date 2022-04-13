@@ -27,7 +27,7 @@ function resultMark() {
     for (let i = 1; i <= 4; i++) {
         sumOfMarks += +prompt(`введите оценку за ${i} четверть`)
     }
-    let result = sumOfMarks / 4;
+    let result = Math.round(sumOfMarks / 4);
     return `ваша годовая оценка ${result}`;
 }
 
@@ -46,7 +46,7 @@ function myStats(wins, fails) {
     let percent = allMatches / 100;
     let winsPercent = (wins / percent).toFixed(2);
     let failsPercent = (fails / percent).toFixed(2);
-    return `ваш процент побед - ${winsPercent}%, поражений – ${failsPercent}%`
+    return `ваш процент побед - ${winsPercent}%, поражений – ${failsPercent}%`;
 }
 
 //console.log(myStats(60, 50));
