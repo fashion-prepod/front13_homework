@@ -51,3 +51,25 @@
 
 // let grade = getGrade(firstGrade, secondGrade, thirdGrade, fourthGrade);
 // alert(`ваша годовая оценка ${Math.round(grade)}`);
+
+
+// 3. 
+// Напишите функцию, которая возвращает процент побед и процент
+// поражений в контру или доту. Функция принимает два параметра:
+// первый это количество побед, а второй это количество поражений.
+// Функция возвращает результативность в процентах. Пример работы:
+// myStats(352,211), это значит было 352 победы и 211 поражений.
+// Функция возвращает сообщение «ваш процент побед - 62%,
+// поражений – 38%»
+
+// let victories = +prompt('Enter the number of wins');
+// let defeats = +prompt('Enter the number of defeats');
+
+// function showMyStats (victories, defeats) {
+//     let totalPlayed = victories + defeats;
+//     let percentageOfWins = victories / totalPlayed  * 100;
+//     let percentageOfDefeats = defeats / totalPlayed * 100;
+//     return `Your percentage of wins is ${Math.round(percentageOfWins)}%, and percentage of defeats is ${Math.round(percentageOfDefeats)}%`;
+// }
+
+// alert(showMyStats(victories, defeats));
