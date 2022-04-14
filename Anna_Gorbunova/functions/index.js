@@ -28,3 +28,26 @@
 
 // let dayOfWeek = getDayOfWeek(userNumber);
 // console.log(dayOfWeek);
+
+
+// 2. 
+// Написать функцию, которая возвращает годовую оценку по предмету.
+// Функция принимает 4 оценки за четверти и возвращает годовую. В
+// начале программы пользователя спрашивают оценки за четверти в
+// виде «введите оценку за 1 четверть», «введите оценку за 2 четверть» и
+// т.д. В конце работы программы выводится сообщение «ваша годовая
+// оценка N».
+
+
+// let firstGrade = +prompt('введите оценку за 1 четверть');
+// let secondGrade = +prompt('введите оценку за 2 четверть');
+// let thirdGrade = +prompt('введите оценку за 3 четверть');
+// let fourthGrade = +prompt('введите оценку за 4 четверть');
+
+// function getGrade (firstGrade, secondGrade, thirdGrade, fourthGrade) {
+//     const result = (firstGrade + secondGrade + thirdGrade + fourthGrade) / 4;
+//     return result;
+// }
+
+// let grade = getGrade(firstGrade, secondGrade, thirdGrade, fourthGrade);
+// alert(`ваша годовая оценка ${Math.round(grade)}`);
