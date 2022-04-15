@@ -49,3 +49,24 @@ let two = +prompt('enter your second mark');
 let three = +prompt('enter your third mark');
 let four = +prompt('enter your fourth mark');
 console.log(`your year mark ${getYearMark(one, two, three, four)}`);
+
+
+
+
+
+
+// 3. Напишите функцию, которая возвращает процент побед и процент
+// поражений в контру или доту. Функция принимает два параметра:
+// первый это количество побед, а второй это количество поражений.
+// Функция возвращает результативность в процентах. Пример работы:
+// myStats(352,211), это значит было 352 победы и 211 поражений.
+// Функция возвращает сообщение «ваш процент побед - 62%,
+// поражений – 38%»
+
+
+function myStats(won, lost) {
+    let userWon = Math.round(won * 100 / (won + lost));
+    let userLost = Math.round(lost * 100 / (won + lost));
+    return `your win rate is ${userWon}%, losses - ${userLost}%`
+}
+console.log(myStats(352, 211));
