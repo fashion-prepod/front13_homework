@@ -22,16 +22,33 @@
 // т.д. В конце работы программы выводится сообщение «ваша годовая
 // оценка N».
 
-let result1 = prompt("Введите оценку за 1 четверть");
-let result2 = prompt("Введите оценку за 2 четверть");
-let result3 = prompt("Введите оценку за 3 четверть");
-let result4 = prompt("Введите оценку за 4 четверть");
-result1 = +result1;
-result2 = +result2;
-result3 = +result3;
-result4 = +result4;
-function yearResult(result1, result2, result3, result4) {
-  let totalResult = (result1 + result2 + result3 + result4) / 4;
-  return Math.round(totalResult);
+// let result1 = prompt("Введите оценку за 1 четверть");
+// let result2 = prompt("Введите оценку за 2 четверть");
+// let result3 = prompt("Введите оценку за 3 четверть");
+// let result4 = prompt("Введите оценку за 4 четверть");
+// result1 = +result1;
+// result2 = +result2;
+// result3 = +result3;
+// result4 = +result4;
+// function yearResult(result1, result2, result3, result4) {
+//   let totalResult = (result1 + result2 + result3 + result4) / 4;
+//   return Math.round(totalResult);
+// }
+// alert(`Ваша годовая оценка ${yearResult(result1, result2, result3, result4)}`);
+
+
+
+// 3. Напишите функцию, которая возвращает процент побед и процент
+// поражений в контру или доту. Функция принимает два параметра:
+// первый это количество побед, а второй это количество поражений.
+// Функция возвращает результативность в процентах. Пример работы:
+// myStats(352,211), это значит было 352 победы и 211 поражений.
+// Функция возвращает сообщение «ваш процент побед - 62%,
+// поражений – 38%»
+
+function myStats(numberOfVictories, numberOfDefeats){
+    let victory = Math.round(numberOfVictories * 100 / (numberOfVictories + numberOfDefeats));
+    let defeat = Math.round(numberOfDefeats * 100 / (numberOfVictories + numberOfDefeats));
+    alert (`ваш процент побед - ${victory}%, поражений – ${defeat}%`);
 }
-alert(`Ваша годовая оценка ${yearResult(result1, result2, result3, result4)}`);
+myStats(352, 211);
