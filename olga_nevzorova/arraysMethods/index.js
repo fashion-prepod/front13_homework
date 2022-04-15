@@ -28,3 +28,20 @@ const userName = prompt();
 const index = people2.indexOf(userName);
 people2.splice(index, 1);
 console.log(people2);
+
+
+
+
+
+
+// 2.3. Создайте новый массив только из тех имен, которые есть в обоих массивах
+
+let people1 = ['Samuel', 'Jack', 'Thomas', 'Henry', 'Leo', 'Cannon', 'David', 'Ryan'];
+let people2 = ['Cannon', 'Stanly', 'Leo', 'Albert', 'Owen', 'Oliver', 'Ethan', 'Thomas'];
+let arr = [];
+for (i = 0; i <= 7; i++) {
+    if (people2.indexOf(people1[i]) !== -1) {
+        arr.push(people1[i]);
+    }
+}
+console.log(arr);
