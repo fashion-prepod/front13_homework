@@ -22,11 +22,6 @@ function startGame() {
     let numOfUserWins = 0
     let numOfCompWins = 0
     for (;;) {
-        if (numOfUserWins === 10) {
-            return alert(`Вы победили со счетом ${numOfUserWins} : ${numOfCompWins}`);
-        } else if (numOfCompWins === 10) {
-            return alert(`Вы проиграли со счетом ${numOfUserWins} : ${numOfCompWins}`);
-        }
         const playerValue = getUserChoise();
         const compValue = getCompChoise();
         if (playerValue === null) {
@@ -42,6 +37,19 @@ function startGame() {
             alert(`Компьютер выбрал ${compValue}, вы выйграли, ${++numOfUserWins} : ${numOfCompWins}`);
         } else {
             alert(`Компьютер выбрал ${compValue}, вы проиграли, ${numOfUserWins} : ${++numOfCompWins}`);
+        }
+        if (numOfUserWins === 10) {
+            alert(`Вы победили со счетом ${numOfUserWins} : ${numOfCompWins}`);
+            if (confirm('Сыграть еще раз ?')) {
+                return startGame();
+            }
+            return;
+        } else if (numOfCompWins === 10) {
+            alert(`Вы проиграли со счетом ${numOfUserWins} : ${numOfCompWins}`);
+            if (confirm('Сыграть еще раз ?')) {
+                return startGame();
+            }
+            return;
         }
     }
 }
