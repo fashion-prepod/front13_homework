@@ -13,7 +13,18 @@ function getUserChoise() {
     }
 }
 function getCompChoise() {
-    return arrVarAnswer[Math.round(Math.random() * 2)];
+    // При таком подходе ножницы будут выпадать в 2 раза чаще чем всё остальное.
+    // return arrVarAnswer[Math.round(Math.random() * 2)];
+
+    // Вот здесь будет всё ОК.
+    const randomCompNum = +Math.random().toFixed(2);
+    if (randomCompNum < 0.33) {
+        return arrVarAnswer[0];
+    } else if (randomCompNum >= 0.66) {
+        return arrVarAnswer[2];
+    } else {
+        return arrVarAnswer[1];
+    }
 }
 function isValidUserChoise(userChoise) {
     return arrVarAnswer.includes(userChoise.toLowerCase());
