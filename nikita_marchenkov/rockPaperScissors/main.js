@@ -1,16 +1,16 @@
 
 function isValidStep(step) {
-    return (step === "камень" || step === "ножницы" || step === "бумага") 
+    return (step === "камень" || step === "ножницы" || step === "бумага");
 }
 
 function getCompStep() {
     let number = Math.random() * 3;
     if(number > 0 && number < 1)  {
-        return "камень"
+        return "камень";
     } else if(number > 1 && number < 2) {
-        return "ножницы"
+        return "ножницы";
     } else {
-        return "бумага"
+        return "бумага";
     }
 }
 
@@ -26,39 +26,39 @@ function rockPaperScissors() {
                 case "камень":{
                    if (step === "ножницы") {
                        compWins++;
-                       alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`)
+                       alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`);
                    } else if (step === "бумага") {
                        userWins++;
                        userCurrentWin = true;
-                       alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`)
+                       alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`);
                    } else {
-                       alert(`Ничья, счет ${userWins}:${compWins}`)
+                       alert(`Ничья, счет ${userWins}:${compWins}`);
                    }
                    break;
                  }
                 case "ножницы" : {
                     if (step === "бумага") {
                         compWins++;
-                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`)
+                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`);
                     } else if (step === "камень") {
                         userWins++;
                         userCurrentWin = true;
-                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`)
+                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`);
                     } else {
-                        alert(`Ничья, счет ${userWins}:${compWins}`)
+                        alert(`Ничья, счет ${userWins}:${compWins}`);
                     }
                     break;
                 }
                 case "бумага" : {
                     if (step === "камень") {
                         compWins++;
-                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`)
+                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`);
                     } else if (step === "ножницы") {
                         userWins++;
                         userCurrentWin = true;
-                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`)
+                        alert(`Компьютер выбрал ${compStep}, вы ${userCurrentWin ? "победили" : "проиграли"}, счет ${userWins}:${compWins}`);
                     } else {
-                        alert(`Ничья, счет ${userWins}:${compWins}`)
+                        alert(`Ничья, счет ${userWins}:${compWins}`);
                     }
                     break;
                 }
