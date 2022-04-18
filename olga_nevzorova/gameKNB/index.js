@@ -25,13 +25,13 @@ function startGame() {
             chekResult(userChoice, robotChoice);
         }
 
-    } while (winUser < 3 && winRobot < 3)
+    } while (winUser < 10 && winRobot < 10)
 
-    if (winUser === 3) {
+    if (winUser === 10) {
         alert('YOU WINNER !!!');
-    } else if (winRobot === 3) {
+    } else if (winRobot === 10) {
         alert('ROBOT WINNER !!!');
-    } else if (winUser === 3 || winRobot === 3) {
+    } else if (winUser === 10 || winRobot === 10) {
         alert('DEAD HEAD');
     }
 
