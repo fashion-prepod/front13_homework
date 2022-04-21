@@ -44,9 +44,14 @@
 // Функция возвращает сообщение «ваш процент побед - 62%,
 // поражений – 38%»
 
-let wins = +prompt('enter your wins');
-let loses = +prompt('enter your loses');
+let userWins = +prompt('enter your wins');
+let userLoses = +prompt('enter your loses');
 
 function winRateDota(wins, loses) {
-    
+    let allGames = wins + loses;
+    let winPercent = (wins / allGames * 100).toFixed(1);
+    let losesPercent = (loses / allGames * 100).toFixed(1);
+    return `Your percent of wins: ${winPercent} and loses: ${losesPercent}`;
 }
+
+console.log(winRateDota(userWins, userLoses));
