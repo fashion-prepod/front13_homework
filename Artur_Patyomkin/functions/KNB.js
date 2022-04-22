@@ -44,7 +44,7 @@ function getUserChoice() {
          user = transform(+user);
          return user;
       } else {
-         alert('Your choice is invalid! Please, try again...')
+         alert('Your choice is invalid! Please, try again...');
       }
    }
 }
