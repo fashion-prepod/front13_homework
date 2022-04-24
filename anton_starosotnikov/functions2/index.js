@@ -68,3 +68,23 @@
 // console.log(classNameEditor('btn_blue', false));
 // console.log(classNameEditor('btn_blue', false));
 
+
+// 4. Создать функцию checkLogin, которая принимает 4 параметра. 1
+// параметр - это логин, введенный пользователем, 2 –
+// правильный логин, 3 – callback, который вызовется если логин
+// верный, 4 – callback, который вызовется если логин ложный.
+
+// function checkLogin(login, registeredLogin, callback1, callback2) {
+//     if (login === registeredLogin) {
+//         callback1();
+//     } else {
+//         callback2();
+//     }
+// }
+// function correctLogin() {
+//     console.log('Welcome');
+// }
+// function invalidLogin() {
+//     console.log('Enter corret login');
+// }
+// checkLogin('istep', 'istep', correctLogin, invalidLogin);
