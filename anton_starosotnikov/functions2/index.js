@@ -88,3 +88,21 @@
 //     console.log('Enter corret login');
 // }
 // checkLogin('istep', 'istep', correctLogin, invalidLogin);
+
+
+// 5. Создать функцию, которая принимает массив и callback. Функция
+// должна каждый элемент массива обрабатывать callback’ом.
+
+// function someFunc(arr, callback) {
+//     let result = []
+//     for (let i = 0; i < arr.length; i++) {
+//         result.push(callback(arr[i]))
+//     }
+//     return result;
+// }
+// function exp(num) {
+//     return num * num;
+// }
+// console.log(someFunc([1, 2, 3, 23, 6], exp));
+
+
