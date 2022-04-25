@@ -52,10 +52,8 @@
 // let newArr = [];
 
 // for (let i = 0; i < people1.length; i++) {
-//     if (people2.includes(people1[i])) {
-//         continue;
-//     } else {
+//     if ( !people2.includes(people1[i]) ) {
 //         newArr.push(people1[i]);
-//     }
+//     } 
 // }
 // console.log(people2.concat(newArr));
