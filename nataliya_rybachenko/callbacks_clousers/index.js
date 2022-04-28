@@ -77,18 +77,31 @@
 // правильный логин, 3 – callback, который вызовется если логин
 // верный, 4 – callback, который вызовется если логин ложный.
 
-function checkLogin(loginUser, trueLogin, callbackTruLogin, callbackFalseLogin) {
-  let messageLoginUser = +prompt(loginUser);
-  if (messageLoginUser === trueLogin) {
-    callbackTruLogin();
-  } else {
-    callbackFalseLogin();
-  }
+// function checkLogin(loginUser, trueLogin, callbackTruLogin, callbackFalseLogin) {
+//   let messageLoginUser = +prompt(loginUser);
+//   if (messageLoginUser === trueLogin) {
+//     callbackTruLogin();
+//   } else {
+//     callbackFalseLogin();
+//   }
+// }
+// let showMessageTrue = function () {
+//   alert("Correct login");
+// };
+// let showMessageFalse = function () {
+//   alert("Invalid login entered");
+// };
+// checkLogin("Enter your login", 111, showMessageTrue, showMessageFalse);
+
+// 5. Создать функцию, которая принимает массив и callback. Функция
+// должна каждый элемент массива обрабатывать callback’ом.
+
+function myFunc(arr, callback) {
+  callback(arr);
 }
-let showMessageTrue = function () {
-  alert("Correct login");
+let myCallback = function (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i] * 10);
+  }
 };
-let showMessageFalse = function () {
-  alert("Invalid login entered");
-};
-checkLogin("Enter your login", 111, showMessageTrue, showMessageFalse);
+myFunc([1, 2, 3, 4], myCallback);
