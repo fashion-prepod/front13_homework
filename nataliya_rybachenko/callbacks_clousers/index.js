@@ -53,21 +53,42 @@
 // класса. Функция должна возвращать текущее
 // название класса.
 
-function classNameEditor() {
-  let clas;
-  return function (nameClass, trueOrFalse) {
-    if (trueOrFalse === true) {
-      clas = nameClass;
-      return clas;
-    } else {
-      return "";
-    }
-  };
+// function classNameEditor() {
+//   let clas;
+//   return function (nameClass, trueOrFalse) {
+//     if (trueOrFalse === true) {
+//       clas = nameClass;
+//       return clas;
+//     } else {
+//       return "";
+//     }
+//   };
+// }
+// let result = classNameEditor();
+// console.log(result("imgHeader", true));
+// console.log(result("imgHeader", false));
+// console.log(result("imgHeader", true));
+// console.log(result("imgHeader", false));
+// console.log(result("imgHeader", true));
+// console.log(result("imgHeader", true));
+
+// 4. Создать функцию checkLogin, которая принимает 4 параметра. 1
+// параметр - это логин, введенный пользователем, 2 –
+// правильный логин, 3 – callback, который вызовется если логин
+// верный, 4 – callback, который вызовется если логин ложный.
+
+function checkLogin(loginUser, trueLogin, callbackTruLogin, callbackFalseLogin) {
+  let messageLoginUser = +prompt(loginUser);
+  if (messageLoginUser === trueLogin) {
+    callbackTruLogin();
+  } else {
+    callbackFalseLogin();
+  }
 }
-let result = classNameEditor();
-console.log(result("imgHeader", true));
-console.log(result("imgHeader", false));
-console.log(result("imgHeader", true));
-console.log(result("imgHeader", false));
-console.log(result("imgHeader", true));
-console.log(result("imgHeader", true));
+let showMessageTrue = function () {
+  alert("Correct login");
+};
+let showMessageFalse = function () {
+  alert("Invalid login entered");
+};
+checkLogin("Enter your login", 111, showMessageTrue, showMessageFalse);
