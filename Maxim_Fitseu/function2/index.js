@@ -2,20 +2,20 @@
 // которая при вызове чередует возвращаемые булевы
 // значения (true, false).
 
-const toggle = () => {
-    let result = true;
-        return function() {
-            result = !result;
-            return result;
-        };
-} 
+// const toggle = () => {
+//     let result = true;
+//         return function() {
+//             result = !result;
+//             return result;
+//         };
+// } 
 
-const toggleMe = toggle();
+// const toggleMe = toggle();
 
-console.log(toggleMe());
-console.log(toggleMe());
-console.log(toggleMe());
-console.log(toggleMe());
+// console.log(toggleMe());
+// console.log(toggleMe());
+// console.log(toggleMe());
+// console.log(toggleMe());
 
 
 
@@ -40,6 +40,24 @@ console.log(toggleMe());
 // параметр - это логин, введенный пользователем, 2 –
 // правильный логин, 3 – callback, который вызовется если логин
 // верный, 4 – callback, который вызовется если логин ложный.
+
+
+function checkLogin(userLogin, correctLogin, correctCallback, incorrectCallback) {
+    if(userLogin === correctLogin) {
+        correctCallback();
+    } else {
+        incorrectCallback();
+    }
+}
+
+function correctLogin() {
+    console.log('You are welcome');
+}
+function invalidLogin() {
+    console.log('Incorrect data');
+}
+
+checkLogin('123', '123', correctLogin, invalidLogin);
 
 // 5. Создать функцию, которая принимает массив и callback. Функция
 // должна каждый элемент массива обрабатывать callback’ом.
