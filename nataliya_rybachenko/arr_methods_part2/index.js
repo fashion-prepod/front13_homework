@@ -53,3 +53,7 @@ const res = arrName.some((item) => {
   return item === "Семён";
 });
 console.log(res);
+
+
+
+
