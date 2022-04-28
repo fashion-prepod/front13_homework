@@ -42,18 +42,38 @@
 // });
 // console.log(newArr);
 
-
-
 //   3. Дан случайный массив имен. Выяснить есть ли в этом
 //   массиве «Семён» с помощью метода .some().
 
+// const arrName = ["Лена", "Коля", "Семён", "Кира"];
+// const res = arrName.some((item) => {
+//   return item === "Семён";
+// });
+// console.log(res);
 
-const arrName = ["Лена", "Коля", "Семён", "Кира"];
-const res = arrName.some((item) => {
-  return item === "Семён";
+//   4. Дан массив случайных чисел. С помощью метода
+//   .reduce() просуммировать только четные числа из этого
+//   массива.
+
+// const arr = [1, 33, 44, 55, 7, 88, 99];
+// const sumEvenNumber = arr.reduce((sum, item) => {
+//   return item % 2 === 0 ? sum + item : sum;
+// }, 0);
+// console.log(sumEvenNumber);
+
+//   5. Пользователь вводит 10 случайных значений. Каждое
+//   значение необходимо записать в массив. С помощью
+//   метода .every() проверить были ли все введенные
+//   пользователем данные – числами.
+
+const arr = [];
+for (; arr.length < 10; ) {
+  let userValue = prompt("Введите значение");
+  arr.push(userValue);
+}
+const validNumber = arr.every((item) => {
+  return !isNaN(item) && item;
 });
-console.log(res);
 
-
-
-
+console.log(arr);
+console.log(validNumber);
