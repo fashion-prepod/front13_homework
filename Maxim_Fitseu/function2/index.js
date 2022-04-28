@@ -2,6 +2,23 @@
 // которая при вызове чередует возвращаемые булевы
 // значения (true, false).
 
+const toggle = () => {
+    let result = true;
+        return function() {
+            result = !result;
+            return result;
+        };
+} 
+
+const toggleMe = toggle();
+
+console.log(toggleMe());
+console.log(toggleMe());
+console.log(toggleMe());
+console.log(toggleMe());
+
+
+
 // 2. Создать функцию funcCounter(), которая способна
 // считать количество своих вызовов. Если передать в эту
 // функцию число меньше 100, то функция считает
