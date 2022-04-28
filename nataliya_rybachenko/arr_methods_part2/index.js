@@ -1,9 +1,9 @@
-const arr = [
-  { a: 2, b: 1 },
-  { a: 5, b: 12 },
-  { a: 95, b: 7 },
-  { a: 51, b: 5 },
-];
+// const arr = [
+//   { a: 2, b: 1 },
+//   { a: 5, b: 12 },
+//   { a: 95, b: 7 },
+//   { a: 51, b: 5 },
+// ];
 
 //    1.1 вывести в консоль 'its valid' если во всех оъектах a > b
 //    вывести  'its invalid' если хотя бы в одном объекте a <= b
@@ -25,9 +25,21 @@ const arr = [
 //    a и b помещены как послеовательные значения
 //    [2, 1, 5, 12, 95, 7, 51, 5]
 
-const newArr = arr.reduce((acc, item) => {
-  acc.push(item.a);
-  acc.push(item.b);
-  return acc;
-}, []);
+// const newArr = arr.reduce((acc, item) => {
+//   acc.push(item.a);
+//   acc.push(item.b);
+//   return acc;
+// }, []);
+// console.log(newArr);
+
+
+//   2. Дан случайный массив чисел. С помощью метода .filter()
+//   отфильтруйте массив так, чтобы в новый массив вошли
+//   только четные двухзначные числа из исходного.
+
+
+const arr = [1, 33, 44, 55, 7, 88, 99];
+const newArr = arr.filter((item) => {
+  return item % 2 === 0 && item > 9;
+});
 console.log(newArr);
