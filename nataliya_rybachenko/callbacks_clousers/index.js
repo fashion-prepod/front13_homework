@@ -28,17 +28,46 @@
 // если передать число больше 100, то функция считает
 // количество от этого числа до 0
 
-function funcCounter(number) {
-  let counter = number;
-  return function () {
-    if (number < 100) {
-      return console.log(++counter);
+// function funcCounter(number) {
+//   let counter = number;
+//   return function () {
+//     if (number < 100) {
+//       return console.log(++counter);
+//     } else {
+//       return console.log(--counter);
+//     }
+//   };
+// }
+// const result = funcCounter(1002);
+// result();
+// result();
+// result();
+
+// 3. Создать функцию classNameEditor(), которая
+// принимает строку с названием класса и добавляет
+// его в класс, если вторым параметром было
+// передано true, если вторым параметром было
+// передано false, то функция пытается удалить из
+// класса переданное имя. Если удаление не было
+// совершено, то просто вернуть строку с названием
+// класса. Функция должна возвращать текущее
+// название класса.
+
+function classNameEditor() {
+  let clas;
+  return function (nameClass, trueOrFalse) {
+    if (trueOrFalse === true) {
+      clas = nameClass;
+      return clas;
     } else {
-      return console.log(--counter);
+      return "";
     }
   };
 }
-const result = funcCounter(1002);
-result();
-result();
-result();
+let result = classNameEditor();
+console.log(result("imgHeader", true));
+console.log(result("imgHeader", false));
+console.log(result("imgHeader", true));
+console.log(result("imgHeader", false));
+console.log(result("imgHeader", true));
+console.log(result("imgHeader", true));
