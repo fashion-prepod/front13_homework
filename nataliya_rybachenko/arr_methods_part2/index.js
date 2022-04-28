@@ -32,14 +32,24 @@
 // }, []);
 // console.log(newArr);
 
-
 //   2. Дан случайный массив чисел. С помощью метода .filter()
 //   отфильтруйте массив так, чтобы в новый массив вошли
 //   только четные двухзначные числа из исходного.
 
+// const arr = [1, 33, 44, 55, 7, 88, 99];
+// const newArr = arr.filter((item) => {
+//   return item % 2 === 0 && item > 9;
+// });
+// console.log(newArr);
 
-const arr = [1, 33, 44, 55, 7, 88, 99];
-const newArr = arr.filter((item) => {
-  return item % 2 === 0 && item > 9;
+
+
+//   3. Дан случайный массив имен. Выяснить есть ли в этом
+//   массиве «Семён» с помощью метода .some().
+
+
+const arrName = ["Лена", "Коля", "Семён", "Кира"];
+const res = arrName.some((item) => {
+  return item === "Семён";
 });
-console.log(newArr);
+console.log(res);
