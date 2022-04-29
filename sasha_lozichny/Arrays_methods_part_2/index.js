@@ -64,3 +64,18 @@
 // const newArr = arr.some((item) => item === "Semen");
 // console.log(newArr);
 
+//4. Дан массив случайных чисел. С помощью метода
+//   .reduce() просуммировать только четные числа из этого
+//   массива.
+
+// const arr = [
+//   { a: 2, b: 1 },
+//   { a: 5, b: 12 },
+//   { a: 95, b: 7 },
+//   { a: 51, b: 5 },
+// ];
+// const arr = [23, 43, 6, 345, 22, 68, 98, 56, 44];
+// const numSum = arr.reduce(
+//   (sum, num) => (num % 2 === 0 ? (sum += num) : sum),0);
+// console.log(numSum);
+
