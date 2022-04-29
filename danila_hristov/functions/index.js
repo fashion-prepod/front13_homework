@@ -20,6 +20,7 @@ function computerTurn () {
         return 'paper'
     } else if (cmpTurn === 2) {
         return 'rock'
+        
     }
 }
 function validCheck (userTurn) {    
