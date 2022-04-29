@@ -33,3 +33,25 @@
 //     };
 // })
 // console.log(newArr);
+
+
+// 1.3 
+// на основе массива arr создать массив где все значения полей
+// a и b помещены как последовательные значения
+// [2, 1, 5, 12, 95, 7, 51, 5]
+
+// const arr = [
+//     { a: 2, b: 1 },
+//     { a: 5, b: 12 },
+//     { a: 95, b: 7 },
+//     { a: 51, b: 5 },
+// ];
+
+// const newArr = arr.reduce((acc, item) => {
+//     acc.push(item.a);
+//     acc.push(item.b);
+//     return acc;
+    
+// }, [])
+
+// console.log(newArr);
