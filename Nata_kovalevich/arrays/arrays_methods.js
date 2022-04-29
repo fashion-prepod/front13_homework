@@ -6,8 +6,7 @@
 //     { a: 95, b: 7 },
 //     { a: 51, b: 5 },
 //   ];
-// let res = arr.every(function(item){
-    
+// let res = arr.every(function(item){  
 //         return  item.a > item.b;
 // })
 // console.log(res ? 'its valid' : 'its invalid');
@@ -38,12 +37,10 @@
 //        { a: 95, b: 7 },
 //        { a: 51, b: 5 },
 //    ];
-
 // let res = arr.reduce(function(acc, item){
   
 //   acc.push(item.a, item.b)
-//   return  acc ;
-  
+//   return  acc ;  
 // },[]) 
 // console.log(res);
   
@@ -72,7 +69,6 @@
 
 // const arr = [123, 555, 888, 987, 562, 412, 1000, 4006];
 // let res = arr.reduce(function(sum, even){
-
 //         return sum += even % 2 ? 0 : even;
 
 // },0)
@@ -85,8 +81,7 @@
 
 // const randomNum = [];
 
-// for(i =0; i < 10; i++){
-    
+// for(i =0; i < 10; i++){  
 //    let user = prompt('Введите значение','') 
 //    if(user === null || user === ''){
 //        alert('Необходимо ввести значение','')
@@ -97,7 +92,6 @@
   
 // }
 // console.log(randomNum);
-
 // let res = randomNum.every(function(item){
 //     return !isNaN(item) ;
 // })
