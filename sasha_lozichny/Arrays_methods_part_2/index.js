@@ -37,3 +37,17 @@
 // const newArr = arr.reduce((acc, item) => [...acc, item.a, item.b],[]);
 // console.log(newArr);
 
+//2. Дан случайный массив чисел. С помощью метода .filter()
+//   отфильтруйте массив так, чтобы в новый массив вошли
+//   только четные двухзначные числа из исходного.
+
+// const arr = [
+//   { a: 2, b: 1 },
+//   { a: 5, b: 12 },
+//   { a: 95, b: 7 },
+//   { a: 51, b: 5 },
+// ];
+// const arr = [23, 43, 6, 345, 22, 68, 98, 56, 44];
+// const newArr = arr.filter((item) => item >= 10 && item % 2 === 0);
+// console.log(newArr);
+
