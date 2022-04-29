@@ -43,3 +43,34 @@
 // console.log(counter());
 // console.log(counter());
 // console.log(counter());
+
+
+// 3. 
+// Создать функцию classNameEditor(), которая
+// принимает строку с названием класса и добавляет
+// его в класс, если вторым параметром было
+// передано true, если вторым параметром было
+// передано false, то функция пытается удалить из
+// класса переданное имя. Если удаление не было
+// совершено, то просто вернуть строку с названием
+// класса. Функция должна возвращать текущее
+// название класса.
+
+// function classNameEditor() {
+//     let className = '';
+//     return function(str, action) {
+//         if (action === true) {
+//             className = className + ' ' +  str;
+//             return className;
+//         } else {
+//             className = className.replace(str, '');
+//             return className;        
+//         }
+//     }
+// }
+// let actualClassName = classNameEditor();
+// console.log(actualClassName('title', true));
+// console.log(actualClassName('dffff', true));
+// console.log(actualClassName('орло', false));
+// console.log(actualClassName('dffff', false));
+// console.log(actualClassName('wwwwwww', true));
