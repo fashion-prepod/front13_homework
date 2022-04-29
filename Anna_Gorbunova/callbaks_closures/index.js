@@ -74,3 +74,31 @@
 // console.log(actualClassName('орло', false));
 // console.log(actualClassName('dffff', false));
 // console.log(actualClassName('wwwwwww', true));
+
+
+// 4. 
+// Создать функцию checkLogin, которая принимает 4 параметра. 1
+// параметр - это логин, введенный пользователем, 2 –
+// правильный логин, 3 – callback, который вызовется если логин
+// верный, 4 – callback, который вызовется если логин ложный.
+
+// const login = 'itIsCorrectLogin';
+// let userLogin = prompt('Enter your login');
+
+// function checkLogin(log1, log2, resolve, reject) {
+//     if (log1 === log2) {
+//         resolve();
+//     } else {
+//         reject();
+//     }
+
+// }
+// checkLogin(userLogin, login, showMessageTrue, showMessageFalse);
+
+// function showMessageTrue() {
+//     alert('Welcome!');
+// }
+
+// function showMessageFalse() {
+//     alert('This is wrong login');
+// }
