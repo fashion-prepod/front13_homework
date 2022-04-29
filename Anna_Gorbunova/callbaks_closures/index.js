@@ -102,3 +102,25 @@
 // function showMessageFalse() {
 //     alert('This is wrong login');
 // }
+
+
+// 5. 
+// Создать функцию, которая принимает массив и callback. Функция
+// должна каждый элемент массива обрабатывать callback’ом.
+
+// const arrNumber = [7, 3, 9, 6, 8];
+
+// function showArr(arr, action) {
+//     arr.forEach(element => {
+//         action(element)
+//     });
+// }
+// showArr(arrNumber, multiplyByTen);
+
+
+// function multiplyByTen (n) {
+//     console.log(n * 10);
+// }
+
+
+
