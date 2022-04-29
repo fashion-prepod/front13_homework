@@ -20,13 +20,17 @@
 // 3. Дан случайный массив имен. Выяснить есть ли в этом
 // массиве «Семён» с помощью метода .some().
 
+let arr = [ 'kolia', 'fedya', 'anton', '«Семён»'];
+ let res = arr.some((item) => item === '«Семён»');
+ console.log(res);
+
 // 4. Дан массив случайных чисел. С помощью метода
 // .reduce() просуммировать только четные числа из этого
 // массива.
 
-let arr = [2, 1, 5, 12, 95, 7, 51, 5];
-let res = arr.reduce((acc, item) => item % 2 === 0 ? acc += item : acc, 0);
-console.log(res);
+// let arr = [2, 1, 5, 12, 95, 7, 51, 5];
+// let res = arr.reduce((acc, item) => item % 2 === 0 ? acc += item : acc, 0);
+// console.log(res);
 
 
 // 5. Пользователь вводит 10 случайных значений. Каждое
