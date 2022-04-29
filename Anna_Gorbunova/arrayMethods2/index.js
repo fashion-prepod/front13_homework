@@ -55,3 +55,15 @@
 // }, [])
 
 // console.log(newArr);
+
+
+// 2.
+// Дан случайный массив чисел. С помощью метода .filter()
+// отфильтруйте массив так, чтобы в новый массив вошли
+// только четные двухзначные числа из исходного.
+
+// const arrayNumbers = [5, 46, 8, 12, 9, 22, 18, 7, 77, 30];
+// let arrayEvenNumbers = arrayNumbers.filter((item) => {
+//     return item > 9 && item % 2 === 0;
+// })
+// console.log(arrayEvenNumbers);
