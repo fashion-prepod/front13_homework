@@ -12,11 +12,19 @@ const arr = [
 //   items.a > items.b);
 //   console.log ( res ? 'its valid' : 'its invalid');
 
-let res = arr.map((items) => items.b**2);
-console.log(res);
+
 
 //  1.2 на основе массива arr создать новый массив у объектов которого
 //  поле b возведено в квадрат
+
+// let res = arr.map((items) => {
+//   return {
+//      a: items.a,
+//      b: items.b**2,
+//   };
+// });
+// console.log(res);
+
 
 
 //  1.3 на основе массива arr созать массив где все значения полей
