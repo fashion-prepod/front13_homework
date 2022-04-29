@@ -78,3 +78,20 @@
 //    return item === 'Семён';
 // })
 // console.log(isSemion);
+
+
+// 4. 
+// Дан массив случайных чисел. С помощью метода
+// .reduce() просуммировать только четные числа из этого
+// массива.
+
+// const arrayNumbers = [5, 46, 8, 12, 9, 3, 18, 7, 77, 30];
+
+// let sumEventNumbers = arrayNumbers.reduce((acc, item) => {
+//     if (item % 2 === 0) {
+//         return acc + item;
+//     } else {
+//         return acc;
+//     }
+// }, 0)
+// console.log(sumEventNumbers);
