@@ -95,3 +95,34 @@
 //     }
 // }, 0)
 // console.log(sumEventNumbers);
+
+
+// 5.
+// Пользователь вводит 10 случайных значений. Каждое
+// значение необходимо записать в массив. С помощью
+// метода .every() проверить были ли все введенные
+// пользователем данные – числами.
+
+// let userRandomValue;
+// let arr = [];
+// for (let i = 0; i < 10; i++) {
+//     userRandomValue = prompt('Enter anything');
+//     if (userRandomValue === null) {
+//         alert('the end')
+//         break;
+//     } else {
+//         arr.push(userRandomValue);    
+//     }
+// }
+// console.log(arr);
+
+// const isNumber = arr.every((item) => {
+//     if (item === '') {
+//         return false;
+//     } 
+//     return !isNaN(Number(item) );
+
+// })
+// console.log(isNumber);
+
+
