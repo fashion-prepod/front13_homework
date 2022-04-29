@@ -79,3 +79,33 @@
 //   (sum, num) => (num % 2 === 0 ? (sum += num) : sum),0);
 // console.log(numSum);
 
+//5. Пользователь вводит 10 случайных значений. Каждое
+//   значение необходимо записать в массив. С помощью
+//   метода .every() проверить были ли все введенные
+//   пользователем данные – числами.
+
+// const arr = [
+//   { a: 2, b: 1 },
+//   { a: 5, b: 12 },
+//   { a: 95, b: 7 },
+//   { a: 51, b: 5 },
+// ];
+// const arr = [];
+// for (i = 0; i < 10; i++) {
+//   let userValue = prompt("enter your number");
+//   if (userValue === null) {
+//     alert("In next time");
+//     break;
+//   }
+//   if (userValue === "") {
+//     alert("enter correct value");
+//     break;
+//   } else {
+//     arr.push(userValue);
+//   }
+//   console.log(arr);
+//   const validValue = arr.every((item) => !isNaN(item));
+//   if (arr.length === 10){
+//     console.log(validValue);}
+// }
+
