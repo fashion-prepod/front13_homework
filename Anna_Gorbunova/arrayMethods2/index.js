@@ -67,3 +67,14 @@
 //     return item > 9 && item % 2 === 0;
 // })
 // console.log(arrayEvenNumbers);
+
+
+// 3. 
+// Дан случайный массив имен. Выяснить есть ли в этом
+// массиве «Семён» с помощью метода .some().
+
+// const arrayNames = ['Сергей', 'Анастасия', 'Евгений', 'Семён', 'Ольга', 'Иван', 'Александр', 'Ксения', 'Денис', 'Мария'];
+// const isSemion = arrayNames.some((item) => {
+//    return item === 'Семён';
+// })
+// console.log(isSemion);
