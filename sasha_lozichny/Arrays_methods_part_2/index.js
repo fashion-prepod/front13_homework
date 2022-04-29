@@ -51,3 +51,16 @@
 // const newArr = arr.filter((item) => item >= 10 && item % 2 === 0);
 // console.log(newArr);
 
+//3. Дан случайный массив имен. Выяснить есть ли в этом
+//   массиве «Семён» с помощью метода .some().
+
+// const arr = [
+//   { a: 2, b: 1 },
+//   { a: 5, b: 12 },
+//   { a: 95, b: 7 },
+//   { a: 51, b: 5 },
+// ];
+// const arr = ["Semen", "Vova", "Petya", "Valerchik"];
+// const newArr = arr.some((item) => item === "Semen");
+// console.log(newArr);
+
