@@ -50,6 +50,24 @@
 // класса. Функция должна возвращать текущее
 // название класса.
 
+function classNameEditor() {
+    let className = '';
+    return (newClassName, boolen) => {
+        if (boolen) {
+            return className += newClassName + ' ';
+        } else {
+            return className.replace(newClassName + ' ', '')
+        } 
+    }  
+}
+
+let classOne = classNameEditor();
+
+console.log(classOne('qwerty', true));
+console.log(classOne('zxcv', true));
+console.log(classOne('HelloWorld', false));
+console.log(classOne('HelloBelarus', false));
+
 // 4. Создать функцию checkLogin, которая принимает 4 параметра. 1
 // параметр - это логин, введенный пользователем, 2 –
 // правильный логин, 3 – callback, который вызовется если логин
