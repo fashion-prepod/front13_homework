@@ -75,3 +75,17 @@
 
 // 5. Создать функцию, которая принимает массив и callback. Функция
 // должна каждый элемент массива обрабатывать callback’ом.
+
+// function accepter(array, callback) {
+
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] = callback(array[i]);
+//     }
+//     return array;
+// }
+
+//  function functItem(item) {
+//     return ++item;
+// }
+
+// console.log(accepter([11, 221, 323, 41], functItem));
