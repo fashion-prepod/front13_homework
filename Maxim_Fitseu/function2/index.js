@@ -26,6 +26,20 @@
 // если передать число больше 100, то функция считает
 // количество от этого числа до 0
 
+
+// function funcCounter(callback) {
+//     let count = callback;
+//     return function counter() {
+//         if (callback < 100) {
+//             return ++count;
+//         } else {
+//             return count !== 0 ? --count : count;
+//         }
+//     } 
+// }
+
+// const countTwo = countCreator(100);
+
 // 3. Создать функцию classNameEditor(), которая
 // принимает строку с названием класса и добавляет
 // его в класс, если вторым параметром было
@@ -42,22 +56,22 @@
 // верный, 4 – callback, который вызовется если логин ложный.
 
 
-function checkLogin(userLogin, correctLogin, correctCallback, incorrectCallback) {
-    if(userLogin === correctLogin) {
-        correctCallback();
-    } else {
-        incorrectCallback();
-    }
-}
+// function checkLogin(userLogin, correctLogin, correctCallback, incorrectCallback) {
+//     if(userLogin === correctLogin) {
+//         correctCallback();
+//     } else {
+//         incorrectCallback();
+//     }
+// }
 
-function correctLogin() {
-    console.log('You are welcome');
-}
-function invalidLogin() {
-    console.log('Incorrect data');
-}
+// function correctLogin() {
+//     console.log('You are welcome');
+// }
+// function invalidLogin() {
+//     console.log('Incorrect data');
+// }
 
-checkLogin('123', '123', correctLogin, invalidLogin);
+// checkLogin('123', '123', correctLogin, invalidLogin);
 
 // 5. Создать функцию, которая принимает массив и callback. Функция
 // должна каждый элемент массива обрабатывать callback’ом.
