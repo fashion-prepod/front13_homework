@@ -38,7 +38,7 @@
 //     } 
 // }
 
-// const countTwo = countCreator(100);
+// const countTwo = funcCreator(100);
 
 // 3. Создать функцию classNameEditor(), которая
 // принимает строку с названием класса и добавляет
