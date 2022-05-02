@@ -7,39 +7,37 @@
 // в качестве коллбэка передайте метод .sayHello() каждого
 // футболиста (используйте .forEach())
 
-const fbPlayers = [
-  {
-    name: "Messi",
-    speed: 2,
-  },
-  {
-    name: "Ronaldo",
-    speed: 10,
-  },
-  {
-    name: "Zidane",
-    speed: 200,
-  },
-];
+// const fbPlayers = [
+//   {
+//     name: "Messi",
+//     speed: 2,
+//   },
+//   {
+//     name: "Ronaldo",
+//     speed: 10,
+//   },
+//   {
+//     name: "Zidane",
+//     speed: 200,
+//   },
+// ];
 
-function sayHello() {
-  console.log(`Hello! My name is ${this.name}`);
-}
+// function sayHello() {
+//   console.log(`Hello! My name is ${this.name}`);
+// }
 
-fbPlayers.forEach((player) => {
-  player.sayHello = sayHello;
-});
+// fbPlayers.forEach((player) => {
+//   player.sayHello = sayHello;
+// });
 
-function presentation(callback) {
-    console.log('Ladies and Gentleman here is...');
-    callback();
-}
+// function presentation(callback) {
+//     console.log('Ladies and Gentleman here is...');
+//     callback();
+// }
 
-fbPlayers.forEach(player=>{
-    presentation(sayHello.bind(player))
-})
-
-
+// fbPlayers.forEach(player=>{
+//     presentation(sayHello.bind(player))
+// })
 
 
 // 3.
@@ -56,3 +54,5 @@ fbPlayers.forEach(player=>{
 //     name: 'John',
 //     age: 20
 // };
+
+// dog.bark.apply(person);
