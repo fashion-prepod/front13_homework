@@ -64,3 +64,30 @@
 //   callback();
 // }
 
+// 3. заставьте person сделать bark()
+// const dog = {
+//     name: 'Bobik',
+//     bark: function () {
+//         console.log(`${this.name} barks`)
+//     }
+// };
+
+// const person = {
+//     name: 'John',
+//     age: 20
+// };
+
+
+// const dog = {
+//   name: "Bobik",
+//   bark: function () {
+//     console.log(`${this.name} barks`);
+//   },
+// };
+
+// const person = {
+//   name: "John",
+//   age: 20,
+// };
+
+// const barked = dog.bark.call(person);
