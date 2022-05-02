@@ -43,6 +43,18 @@
 // presentation(fbPlayers); // в качестве коллбека передаю массив объектов.
 
 
+// Почитал еще раз условие и понял что имелось ввиду вот так...
+// function sayHello() {
+//     console.log(`Hello! My name is ${this.name}`);
+// };
+// fbPlayers.forEach(fb => fb.sayHello = sayHello);
+// function presentation(callback) {
+//     console.log("Ladies and Gentleman here is...");
+//     callback();
+// };
+// fbPlayers.forEach(fb => presentation(sayHello.bind(fb)));
+
+
 // Task 3
 // const dog = {
 //     name: 'Bobik',
