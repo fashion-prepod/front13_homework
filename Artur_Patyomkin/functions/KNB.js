@@ -37,7 +37,7 @@ function getComputerChoice() {
 function getUserChoice() {
    let user;
    for (; ;) {
-      user = prompt('enter 1 if you choose "rock", enter 2 if you choose "scissors", enter 3 if you choose "paper"');
+      user = prompt('enter 0 if you choose "rock", enter 1 if you choose "scissors", enter 2 if you choose "paper"');
       if (user === null) {
          return null;
       }
