@@ -61,3 +61,11 @@
 // console.log(newArr);
 
 
+// 3. Дан случайный массив имен. Выяснить есть ли в этом
+// массиве «Семён» с помощью метода .some().
+
+// const arr = ['Petya', 'Sergey', 'Vitalik', 'Artur', 'Masha', 'Semen', 'Katya'];
+// const isSemenHere = arr.some((item) => item === 'Semen')
+// console.log(isSemenHere ? 'Yes, Semen is here' : 'No, Semen propal');
+
+
