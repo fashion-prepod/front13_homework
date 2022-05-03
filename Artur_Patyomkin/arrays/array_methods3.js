@@ -69,3 +69,24 @@
 // console.log(isSemenHere ? 'Yes, Semen is here' : 'No, Semen propal');
 
 
+// 4. Дан массив случайных чисел. С помощью метода
+// .reduce() просуммировать только четные числа из этого
+// массива.
+
+// const arr = [1, 12, 45, 24, 6, 232, 43, 22, 10, 84];
+// const sumOfEvenNumbers = arr.reduce((sum, num) => num % 2 === 0 ? sum += num : sum, 0);
+// console.log(sumOfEvenNumbers);
+
+
+// 5. Пользователь вводит 10 случайных значений. Каждое
+// значение необходимо записать в массив. С помощью
+// метода .every() проверить были ли все введенные
+// пользователем данные – числами.
+
+const arr = [];
+for (let i = 0; i < 10; i++) {
+   arr[i] = prompt('enter a number');
+}
+console.log(arr);
+const isAllNumbers = arr.every((item) => !null && !isNaN(+item) && !' ');
+console.log(isAllNumbers ? 'Yes' : 'No, be careful');
