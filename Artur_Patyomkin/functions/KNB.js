@@ -10,12 +10,13 @@
 // после того как кто-либо изщ участников достигнет 10ти побед выводим
 // финального победителя
 
-function transform(choiceNumber) {
-   if (Math.round(choiceNumber) === 0) {                         //Math.round() в данном случае обработчик дурака, если пользователь введёт дробное число (т.е решил мухлевать).
+function convertNumberToChoice(choiceNumber) {
+   const choiceNumberInteger = Math.round(choiceNumber);
+   if (choiceNumberInteger === 0) {                         //Math.round() в данном случае обработчик дурака, если пользователь введёт дробное число (т.е решил мухлевать).
       return 'rock';
-   } else if (Math.round(choiceNumber) === 1) {
+   } else if (choiceNumberInteger === 1) {
       return 'scissors';
-   } else if (Math.round(choiceNumber) === 2) {
+   } else if (choiceNumberInteger === 2) {
       return 'paper';
    }
 }
@@ -29,7 +30,7 @@ const isValidChoice = (userChoice) =>
    )
 
 function getComputerChoice() {
-   const computer = transform(Math.round(Math.random() * 2));
+   const computer = convertNumberToChoice(Math.round(Math.random() * 2));
    return computer;
 }
 
@@ -41,12 +42,43 @@ function getUserChoice() {
          return null;
       }
       if (isValidChoice(user)) {
-         user = transform(+user);
+         user = convertNumberToChoice(+user);
          return user;
       } else {
          alert('Your choice is invalid! Please, try again...');
       }
    }
+}
+function whoIsWinner(userChoice, computerChoice, userPoints, computerPoints) {
+   if (userChoice === computerChoice) {
+      alert(`Draw!!! user ${userPoints} : ${computerPoints} computer`);
+      return 'draw';
+   }
+   if (userChoice === 'rock' && computerChoice === 'scissors') {
+      alert(`User wins! user ${++userPoints} : ${computerPoints} computer`);
+      return 'user';
+   }
+   if (userChoice === 'rock' && computerChoice === 'paper') {
+      alert(`Computer wins! user ${userPoints} : ${++computerPoints} computer`);
+      return 'comp';
+   }
+   if (userChoice === 'scissors' && computerChoice === 'rock') {
+      alert(`Computer wins! user ${userPoints} : ${++computerPoints} computer`);
+      return 'comp';
+   }
+   if (userChoice === 'scissors' && computerChoice === 'paper') {
+      alert(`User wins! user ${++userPoints} : ${computerPoints} computer`);
+      return 'user';
+   }
+   if (userChoice === 'paper' && computerChoice === 'rock') {
+      alert(`User wins! user ${++userPoints} : ${computerPoints} computer`);
+      return 'user';
+   }
+   if (userChoice === 'paper' && computerChoice === 'scissors') {
+      alert(`Computer wins! user ${userPoints} : ${++computerPoints} computer`);
+      return 'comp';
+   }
+
 }
 
 function startGame() {
@@ -59,33 +91,11 @@ function startGame() {
          alert('You LOST!!!');
          return;
       }
-      if (userChoice === computerChoice) {
-         alert(`Draw!!! user ${userPoints} : ${computerPoints} computer`);
+      const winner = whoIsWinner(userChoice, computerChoice, userPoints, computerPoints);
+      if (winner === 'draw') {
+         continue;
       }
-      if (userChoice === 'rock' && computerChoice === 'scissors') {
-         ++userPoints;
-         alert(`User wins! user ${userPoints} : ${computerPoints} computer`);
-      }
-      if (userChoice === 'rock' && computerChoice === 'paper') {
-         ++computerPoints;
-         alert(`Computer wins! user ${userPoints} : ${computerPoints} computer`);
-      }
-      if (userChoice === 'scissors' && computerChoice === 'rock') {
-         ++computerPoints;
-         alert(`Computer wins! user ${userPoints} : ${computerPoints} computer`);
-      }
-      if (userChoice === 'scissors' && computerChoice === 'paper') {
-         ++userPoints;
-         alert(`User wins! user ${userPoints} : ${computerPoints} computer`);
-      }
-      if (userChoice === 'paper' && computerChoice === 'rock') {
-         ++userPoints;
-         alert(`User wins! user ${userPoints} : ${computerPoints} computer`);
-      }
-      if (userChoice === 'paper' && computerChoice === 'scissors') {
-         ++computerPoints;
-         alert(`Computer wins! user ${userPoints} : ${computerPoints} computer`);
-      }
+      winner === 'user' ? userPoints++ : computerPoints++;
    }
    if (userPoints === 10) {
       alert(`User is the final winner!!! user ${userPoints} : ${computerPoints} computer`)
