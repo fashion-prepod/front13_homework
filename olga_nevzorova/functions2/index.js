@@ -39,3 +39,29 @@ const result = countCreator(9);
 console.log(result());
 console.log(result());
 console.log(result());
+
+
+// 3. Создать функцию classNameEditor(), которая
+// принимает строку с названием класса и добавляет
+// его в класс, если вторым параметром было
+// передано true, если вторым параметром было
+// передано false, то функция пытается удалить из
+// класса переданное имя. Если удаление не было
+// совершено, то просто вернуть строку с названием
+// класса. Функция должна возвращать текущее
+// название класса.
+
+function classNameEditor() {
+    let arr = [];
+    return function (string, boolean) {
+        if (boolean === true) {
+            arr.push(string);
+            return arr.join('');
+        } else if (boolean === false) {
+            delete arr[arr.indexOf(string)];
+            return arr.join('');
+        }
+    }
+}
+
+const className = classNameEditor();
