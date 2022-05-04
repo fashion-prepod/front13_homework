@@ -65,3 +65,13 @@ function classNameEditor() {
 }
 
 const className = classNameEditor();
+
+
+// 4. Создать функцию checkLogin, которая принимает 4 параметра. 1
+// параметр - это логин, введенный пользователем, 2 –
+// правильный логин, 3 – callback, который вызовется если логин
+// верный, 4 – callback, который вызовется если логин ложный.
+
+function checkLogin(login, rightlogin, callback1, callback2) {
+    login === rightlogin ? callback1() : callback2()
+}
