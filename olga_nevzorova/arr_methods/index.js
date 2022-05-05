@@ -70,3 +70,20 @@ console.log(filter);
 const arr = ['Петя', 'Вася', 'Лева', 'Семен', 'Костя'];
 const res = arr.some((item) => item === 'Семен');
 console.log(res);
+
+
+
+//   4. Дан массив случайных чисел. С помощью метода
+//   .reduce() просуммировать только четные числа из этого
+//   массива.
+
+const arr = [2, 10, 3, 5, 6];
+const res = arr.reduce((sum, item) => {
+    if (item % 2 === 0) {
+        return sum + item
+    } else {
+        return sum + 0
+    }
+}, 0)
+
+console.log(res)
