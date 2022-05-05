@@ -90,3 +90,21 @@
 // }
 // checkLogin("Valerchik1986", "Valerchik1986", callbackCorrectValue, callbackWrongValue);
 
+// 5. Создать функцию, которая принимает массив и callback. Функция
+// должна каждый элемент массива обрабатывать callback’ом.
+
+// function cheakValue(arr, callback) {
+//   let newArr = arr;
+//   let foo = callback;
+//   for (let i = 0; i < arr.length; i++) {
+//     newArr[i] = foo(arr[i]);
+//   }
+
+//   return newArr;
+// }
+// console.log(cheakValue([1, 2, 3, 4, 5, 6], sum));
+
+// function sum(value) {
+//   return value + value;
+// }
+
