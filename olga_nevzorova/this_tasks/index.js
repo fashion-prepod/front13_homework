@@ -47,3 +47,22 @@ function presentation(callback) {
 fbPlayers.forEach((item) => {
     presentation(item.sayHello = sayHello.bind(item));
 })
+
+
+// 3. заставьте person сделать bark()
+
+
+const dog = {
+    name: 'Bobik',
+    bark: function () {
+        console.log(`${this.name} barks`)
+    }
+};
+
+const person = {
+    name: 'John',
+    age: 20
+};
+
+
+dog.bark.apply(person);
