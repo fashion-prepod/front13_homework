@@ -69,4 +69,24 @@
 // console.log(className("Vanya", true));
 // console.log(className("Pasha", false));
 
+// 4. Создать функцию checkLogin, которая принимает 4 параметра. 1
+// параметр - это логин, введенный пользователем, 2 –
+// правильный логин, 3 – callback, который вызовется если логин
+// верный, 4 – callback, который вызовется если логин ложный.
+
+// const correctLogin = "Valerchik1986";
+// function checkLogin(login, correctLogin, callbackCorrectValue, callbackWrongValue) {
+//   if (login === correctLogin) {
+//     callbackCorrectValue();
+//   } else {
+//     callbackWrongValue();
+//   }
+// }
+// function callbackCorrectValue() {
+//   return console.log("login correct");
+// }
+// function callbackWrongValue() {
+//   return console.log("login uncorrect");
+// }
+// checkLogin("Valerchik1986", "Valerchik1986", callbackCorrectValue, callbackWrongValue);
 
