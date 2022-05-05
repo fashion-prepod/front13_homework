@@ -47,3 +47,18 @@ console.log(allArr)
 // console.log(allArr)
 
 
+//   2. Дан случайный массив чисел. С помощью метода .filter()
+//   отфильтруйте массив так, чтобы в новый массив вошли
+//   только четные двухзначные числа из исходного.
+
+function filterArr(item) {
+    if (item % 2 === 0 && item >= 10 && item < 100) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+const arr = [2, 10, 3, 5, 6];
+let filter = arr.filter((item) => (item % 2 === 0 && item >= 10 && item < 100));
+console.log(filter);
