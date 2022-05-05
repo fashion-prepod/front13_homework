@@ -87,3 +87,26 @@ const res = arr.reduce((sum, item) => {
 }, 0)
 
 console.log(res)
+
+
+//   5. Пользователь вводит 10 случайных значений. Каждое
+//   значение необходимо записать в массив. С помощью
+//   метода .every() проверить были ли все введенные
+//   пользователем данные – числами.
+
+function userNumbers() {
+    let arr = [];
+    for (i = 0; i < 10; i++) {
+        let item = prompt('Enter a number');
+        arr.push(item)
+
+    }
+    return arr;
+}
+
+const newArr = userNumbers();
+console.log(newArr);
+const res = newArr.every((item) => {
+    return item !== null && !isNaN(item) && item !== '';
+});
+console.log(res);
