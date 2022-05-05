@@ -75,3 +75,11 @@ const className = classNameEditor();
 function checkLogin(login, rightlogin, callback1, callback2) {
     login === rightlogin ? callback1() : callback2()
 }
+
+
+// 5. Создать функцию, которая принимает массив и callback. Функция
+// должна каждый элемент массива обрабатывать callback’ом.
+
+function massive(arr, callback) {
+    arr.map((item) => callback(item))
+}
