@@ -4,7 +4,7 @@ class Human {
         this.age = age;
     };
     sayHi() {
-        return console.log(`Hi, my name is ${this.name}`);
+        console.log(`Hi, my name is ${this.name}`);
     };
 }
 
@@ -14,7 +14,7 @@ class Programmer extends Human {
         this.stack = stack;
     };
     startCoding() {
-        return console.log(`${this.name} is coding using ${this.stack}`);
+        console.log(`${this.name} is coding using ${this.stack}`);
     };
 }
 
@@ -30,7 +30,7 @@ class FootballPlayer extends Sportsman {
         this.team = team;
     }
     run(speed) {
-        return console.log(`${this.name} is running ${speed} kmph`);
+        console.log(`${this.name} is running ${speed} kmph`);
     }
 }
 class HockeyPlayer extends Sportsman {
@@ -39,7 +39,7 @@ class HockeyPlayer extends Sportsman {
         this.weight = weight;
     }
     pushOpponent(opponentName) {
-        return console.log(`${this.name} pushed ${opponentName} and used ${this.weight} kgs`);
+        console.log(`${this.name} pushed ${opponentName} and used ${this.weight} kgs`);
     }
 }
 const human = new Human('Victor', 28);
