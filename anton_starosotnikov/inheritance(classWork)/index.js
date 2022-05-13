@@ -67,3 +67,39 @@
 // Помните:
 // Длину линии можно найти по теореме Пифагора.
 // Стороны могут сформировать треугольник если длина каждой стороны треугольника должны быть меньше суммы длин остальных сторон.
+
+// function calcLengthOfLines(arrLines) {
+//     const arrLineLengths = [];
+//     arrLines.map((line) => {
+//         let katet1 = Math.abs(line.start.x - line.end.x);
+//         let katet2 = Math.abs(line.start.y - line.end.y);
+//         arrLineLengths.push(+Math.sqrt(katet1**2 + katet2**2).toFixed(1));
+//     });
+//     return arrLineLengths;
+// }
+// const lines = [
+//     {
+//         start: {x: 1, y: 5},
+//         end: {x: 6, y: 2},
+//     },
+//     {
+//         start: {x: 2, y: 1},
+//         end: {x: 0, y: 5},
+//     },
+//     {
+//         start: {x: 3, y: 3},
+//         end: {x: 5, y: 2},
+//     },
+// ]
+// const result = calcLengthOfLines(lines);
+// function isTriangleOfLines(result) {
+//     let sum = result.reduce((acc, num) => {
+//         return acc + num;
+//     }, 0);
+//     if (result.every(num => num < (sum - num))) {
+//         console.log('Могут');
+//     } else {
+//         console.log('Не могут');
+//     }
+// }
+// isTriangleOfLines(result);
