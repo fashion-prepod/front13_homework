@@ -14,6 +14,7 @@ hm.sayHi();
 class Programmer extends Human {
     constructor(name, age, technologies){
     super(name, age,  technologies);
+    this.technologies = technologies;
     }
     startCoding = function (){
         console.log(`${this.name} is coding using HTML, CSS, JS`)  
