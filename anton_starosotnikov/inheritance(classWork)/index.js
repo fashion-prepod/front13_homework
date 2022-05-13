@@ -69,13 +69,11 @@
 // Стороны могут сформировать треугольник если длина каждой стороны треугольника должны быть меньше суммы длин остальных сторон.
 
 // function calcLengthOfLines(arrLines) {
-//     const arrLineLengths = [];
-//     arrLines.map((line) => {
-//         let katet1 = Math.abs(line.start.x - line.end.x);
-//         let katet2 = Math.abs(line.start.y - line.end.y);
-//         arrLineLengths.push(+Math.sqrt(katet1**2 + katet2**2).toFixed(1));
-//     });
-//     return arrLineLengths;
+//     return arrLineLengths = arrLines.map(line => {
+//         let katetOne = Math.abs(line.start.x - line.end.x);
+//         let katetTwo = Math.abs(line.start.y - line.end.y);
+//         return +Math.sqrt(katetOne**2 + katetTwo**2).toFixed(1);
+//     });  
 // }
 // const lines = [
 //     {
@@ -91,15 +89,15 @@
 //         end: {x: 5, y: 2},
 //     },
 // ]
-// const result = calcLengthOfLines(lines);
-// function isTriangleOfLines(result) {
-//     let sum = result.reduce((acc, num) => {
+// const resArrOfLines = calcLengthOfLines(lines);
+// function isTriangleOfLines(resArrOfLines) {
+//     let sum = resArrOfLines.reduce((acc, num) => {
 //         return acc + num;
 //     }, 0);
-//     if (result.every(num => num < (sum - num))) {
-//         console.log('Могут');
+//     if (resArrOfLines.every(num => num < (sum - num))) {
+//         console.log('Линии могут cформировать треугольник');
 //     } else {
-//         console.log('Не могут');
+//         console.log('Линии не могут сформировать треугольник');
 //     }
 // }
-// isTriangleOfLines(result);
+// isTriangleOfLines(resArrOfLines);
