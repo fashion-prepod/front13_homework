@@ -67,20 +67,20 @@
 //   метода .every() проверить были ли все введенные
 //   пользователем данные – числами.
 
-function userNumbers() {
-    let arr = [];
-    for (i = 0; i < 10; i++) {
-        let number = prompt('Enter a number');
-        arr.push(number);
+// function userNumbers() {
+//     let arr = [];
+//     for (i = 0; i < 10; i++) {
+//         let number = prompt('Enter a number');
+//         arr.push(number);
 
-    }
-    return arr;
-};
+//     }
+//     return arr;
+// };
 
-const newArr = userNumbers();
+// const newArr = userNumbers();
 
-const res = newArr.every((item) => {
-    return item !== null && !isNaN(item) && item !== '';
-});
+// const res = newArr.every((item) => {
+//     return item !== null && !isNaN(item) && item !== '';
+// });
 
-console.log(res);
+// console.log(res);
