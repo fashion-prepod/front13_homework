@@ -1,15 +1,24 @@
-// Task 2. Создать класс Device, который имеет параметр isOn (по умолчанию false), метод callSmbd, который принимает имя
-// вызываемого абонента и метод switchDevice, который переключает параметр isOn. Позвонить абоненту можно только тогда, когда параметр isOn == true, иначе вывести сообщение, что звонок невозможен. Необходимо также создать классы Smartphone(принимает имя и диагональ экрана(не может быть больше 8)) и Tablet(принимает имя и диагональ экрана (не может быть меньше 8)), которые наследуют от класса Device.
+// Task 2. Создать класс Device, который имеет параметр isOn (по умолчанию false),
+// вызываемого абонента и метод switchDevice, который переключает параметр isOn. Позвонить абоненту можно только тогда, когда параметр isOn == true, иначе вывести сообщение, что звонок невозможен.
+
+// .diagonal = ???;
+// Необходимо также создать классы Smartphone(принимает имя и диагональ экрана(не может быть больше 8))
+// метод callSmbd, который принимает имя
+
+//  и Tablet(принимает имя и диагональ экрана (не может быть меньше 8)), которые наследуют от класса Device.
+// .watchMovies(movieName)
 
 // class Device {
-//     isOn = false;
-//     callSmbd(name) {
-//         console.log(this.isOn ? `You call ${name}` : `The call is not possible turn on the device`);
-//     }
+//     #isOn = false;
 //     switchDevice() {
-//         this.isOn = !this.isOn;
+//         this.#isOn = !this.#isOn;
+//     }
+//     get isOn() {
+//         return this.#isOn;
 //     }
 // }
+
+// class ScreenDiagonalError extends Error {};
 
 // class Smartphone extends Device {
 //     constructor(deviceName, screenDiagonal) {
@@ -18,14 +27,16 @@
 //         if (screenDiagonal <= 8) {
 //             this.screenDiagonal = screenDiagonal;
 //         } else {
-//             this.screenDiagonal = null;
-//             console.log(`The ${this.deviceName} cant have such a diagonal`);
+//             throw new ScreenDiagonalError(`This diagonal (${screenDiagonal} inch) cannot be used when creating this ${deviceName}`);
 //         }
+//     }
+//     callSmbd(name) {
+//         console.log(this.isOn ? `You calling ${name}` : `The call is not possible turn on the device`);
 //     }
 // }
 
-// const iphone = new Smartphone('iphoneSE', 5);
-// console.log(iphone);
+// const iphone = new Smartphone('iphone', 5);
+// iphone.switchDevice();
 // iphone.callSmbd('Harry');
 
 // class Tablet extends Device {
@@ -35,16 +46,28 @@
 //         if (screenDiagonal > 8) {
 //             this.screenDiagonal = screenDiagonal;
 //         } else {
-//             this.screenDiagonal = null;
-//             console.log(`The ${this.deviceName} cant have such a diagonal`);
+//             throw new ScreenDiagonalError(`This diagonal (${screenDiagonal} inch) cannot be used when creating this ${deviceName}`);
 //         }
+//     }
+//     watchMovies(movieName) {
+//         console.log(this.isOn ? `You watching ${movieName}` : `Video playback is not possible, turn on the device`);
 //     }
 // }
 
 // const ipad = new Tablet('Ipad', 10);
+// let lenovo;
 // ipad.switchDevice();
-// ipad.callSmbd('Harry');
-// console.log(ipad);
+// ipad.watchMovies('Interstellar');
+
+// try {
+//     lenovo = new Tablet('Lenovo', 1);
+// } catch (error) {
+//     if (error instanceof ScreenDiagonalError) {
+//         lenovo = new Tablet('Lenovo', 12)
+//     } else {
+//         throw error;
+//     }
+// }
 
 
 // Task 3 Создать класс arrCommander, конструктор которого принимает массив чисел. Конструктор должен создавать
@@ -52,7 +75,7 @@
 
 // class arrCommander {
 //     constructor(arrNum) {
-//         this.getBiggerArr = (userNumber) => arrNum.map(num => num + userNumber);
+//         this.getBiggerArr = userNumber => arrNum.map(num => num + userNumber);
 //         this.getCurrentArr = () => arrNum;
 //     }
 // }
@@ -90,11 +113,12 @@
 //     },
 // ]
 // const resArrOfLines = calcLengthOfLines(lines);
+// console.log(resArrOfLines)
 // function isTriangleOfLines(resArrOfLines) {
-//     let sum = resArrOfLines.reduce((acc, num) => {
+//     let sumOfLineLength = resArrOfLines.reduce((acc, num) => {
 //         return acc + num;
 //     }, 0);
-//     if (resArrOfLines.every(num => num < (sum - num))) {
+//     if (resArrOfLines.every(lineLength => lineLength < (sumOfLineLength - lineLength))) {
 //         console.log('Линии могут cформировать треугольник');
 //     } else {
 //         console.log('Линии не могут сформировать треугольник');
