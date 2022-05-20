@@ -1,0 +1,478 @@
+[33mcommit 301669a82cca2302a958f9e8520db3d6e635939e[m[33m ([m[1;36mHEAD -> [m[1;32mItratsevskiy/arrays[m[33m)[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Thu Apr 14 17:55:30 2022 +0300
+
+    The first functions task
+
+[33mcommit 5cb46f04a9e661734037f6f6a047e3e1668a4465[m[33m ([m[1;31morigin/Itratsevskiy/arrays[m[33m)[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Fri Apr 8 15:49:21 2022 +0300
+
+    Task 1 completed(2 pack)
+
+[33mcommit cd015545d6ea87b2efb55d1a72ea2fc3203aa70a[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Fri Apr 8 15:45:38 2022 +0300
+
+    Task 3 completed
+
+[33mcommit b8a37a973f8e36a00f8319b1864f2c1558e36d3c[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Fri Apr 8 15:44:40 2022 +0300
+
+    Task 2 completed
+
+[33mcommit 4dd33b1b8bdb5ff5816a85f900de4eacf6e7e901[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Fri Apr 8 15:43:39 2022 +0300
+
+    Task 1 completed
+
+[33mcommit 255b3918df3297682456c995877fd75f51dcbaa4[m[33m ([m[1;31morigin/Itratsevskiy/loop[m[33m, [m[1;32mItratsevskiy/loop[m[33m)[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Thu Mar 31 12:19:07 2022 +0300
+
+    Fourth loop
+
+[33mcommit 7f4d727fa41d26b33df0079caecd14081d852387[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Thu Mar 31 12:08:25 2022 +0300
+
+    Third loop
+
+[33mcommit 05de9121f0248bf08718b7abf2dd11dbdf13a4f0[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Thu Mar 31 11:57:57 2022 +0300
+
+    Second loop
+
+[33mcommit 1679a20e7beb97c8cd6364add948e8a19d5acf49[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Thu Mar 31 11:51:11 2022 +0300
+
+    First loop
+
+[33mcommit ba41a0fe574cb6f090e4bc50aba478a694fcc285[m[33m ([m[1;32mmaster[m[33m, [m[1;32mloop[m[33m)[m
+Merge: 75be17c e285390
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Mon Mar 28 20:03:46 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit e285390d5203b3e6e76764f43d603b28bdf3c141[m
+Merge: 63df5e4 453f986
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:59:52 2022 +0300
+
+    Merge pull request #13 from GavriBY/haurilenko/loops
+    
+    Haurilenko/loops
+
+[33mcommit 63df5e47f900a84d832445c70338fccba477c56c[m
+Merge: e9cfab2 3cc2907
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:59:29 2022 +0300
+
+    Merge pull request #14 from Maxific/mfitseu/loops
+    
+    Mfitseu/loops
+
+[33mcommit e9cfab27bb3348fed0fd3b1389cb2be62eb6ecb7[m
+Merge: acd46c4 1f04d9d
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:59:03 2022 +0300
+
+    Merge pull request #15 from BartoshVadim12/vbartosh/loops
+    
+    Vbartosh/loops
+
+[33mcommit 1f04d9dfac48675a28853d0eb466387ab57c8d36[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:56:00 2022 +0300
+
+    loops
+
+[33mcommit 66590a53b3a7b3c7e70b61ca7d05d4dec01b5091[m
+Merge: be9a99a acd46c4
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:53:29 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit acd46c42bcff411a4ac0a49f2f39fc5c922169df[m
+Merge: 324e193 fcc85e5
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:36:42 2022 +0300
+
+    Merge pull request #4 from Sasha867/slozichny/loops
+    
+    Slozichny/loops
+
+[33mcommit 324e1933cae1388ea98d52a2db9ee8932f67a71c[m
+Merge: fa3b541 033eec0
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:36:24 2022 +0300
+
+    Merge pull request #5 from GorbunovaAnna/agorbunova/loops
+    
+    Agorbunova/loops
+
+[33mcommit fa3b541f2d86c2e998c8005323f1d403a7b7b185[m
+Merge: 346361e 66b06a7
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:36:09 2022 +0300
+
+    Merge pull request #6 from DanilaHristov/dhristov/loops
+    
+    Dhristov/loops
+
+[33mcommit 346361eee53fa3ca9d7982bb88df86cdbf2561b0[m
+Merge: 973939a 0143930
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:35:55 2022 +0300
+
+    Merge pull request #7 from neuzorovaolga/onevzorova/loops
+    
+    Onevzorova/loops
+
+[33mcommit 973939a608abc39c952a8ad8cdf31cb906779069[m
+Merge: 0661236 343d3ad
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:35:31 2022 +0300
+
+    Merge pull request #8 from Xaky0105/astarosotnikov/loops
+    
+    Astarosotnikov/loops
+
+[33mcommit 06612361280fb5c51f3c6fa255bb57caad5a1438[m
+Merge: 115ee23 d72b2de
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:35:08 2022 +0300
+
+    Merge pull request #9 from Kovanata86/nkovalevich/loops
+    
+    Nkovalevich/loops
+
+[33mcommit 75be17c3d8b72e0ab6ab9961410003c0b344af27[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Mon Mar 28 19:34:58 2022 +0300
+
+    first pr
+
+[33mcommit 115ee23f13f5a9e771db3ade00f6aab73f9362ab[m
+Merge: bd17eea 5382433
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:34:43 2022 +0300
+
+    Merge pull request #11 from ExoticDuck/nmarchenkov/loops
+    
+    nmarchenkov/loops
+
+[33mcommit 5be4042dec018c18bc3ad6d6e855f6bab5e32a83[m
+Merge: 16f5c25 bd17eea
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Mon Mar 28 19:34:13 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit bd17eeadf8a8303ca9b0bd61bed44d0777852c67[m
+Merge: 5c73ec0 7ad7021
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 19:33:50 2022 +0300
+
+    Merge pull request #3 from Rybachenka/nrybachenko/loops
+    
+    Nrybachenko/loops
+
+[33mcommit 014393038fba28871380787849b76f0f2c0fbcc7[m
+Author: olga <neuzorova@gmail.com>
+Date:   Mon Mar 28 19:25:17 2022 +0300
+
+    index.js added
+
+[33mcommit 66b06a7cba5e3a63535a2b24a76e185d09b4d6b4[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:24:35 2022 +0300
+
+    index js added
+
+[33mcommit fcc85e5f326fdaea7e14c43070a09ec67626038f[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:24:15 2022 +0300
+
+    added index.js
+
+[33mcommit d72b2de0727c8881806a26b030b18eda4f1e4f6b[m
+Author: Web <natkova86@mail.ru>
+Date:   Mon Mar 28 19:23:42 2022 +0300
+
+    added index.js
+
+[33mcommit 033eec0a896570dbe84b1251207f1ebcc2e18ccf[m
+Author: anna <anyutachke@gmail.com>
+Date:   Mon Mar 28 19:23:41 2022 +0300
+
+    added index.js
+
+[33mcommit d6886b4df325d9a0fee81701969ed7e3648e8cba[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:23:31 2022 +0300
+
+    index added
+
+[33mcommit 3cc29079c4b144c2a6e24b184591f2bbe36e540b[m
+Author: maxific <maxific@tut.by>
+Date:   Mon Mar 28 19:23:11 2022 +0300
+
+    changes in index.js
+
+[33mcommit 5382433ee37d1df1c4550c920cd8eaac8f8a7a85[m
+Author: ExoticDuck <marchenkov.n@inbox.ru>
+Date:   Mon Mar 28 19:23:11 2022 +0300
+
+    added main.js
+
+[33mcommit 7ad7021ce1efd289d690acb09ec59d387480825d[m
+Author: nata <7381458@mail.ru>
+Date:   Mon Mar 28 19:23:07 2022 +0300
+
+    added index.js
+
+[33mcommit 1da48c8bcab19cfb786ea61564f4cc6a0745c5f2[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:21:58 2022 +0300
+
+    added index.html
+    git log
+    git add .
+    q
+    git
+
+[33mcommit 41f9ce22a5041c7561fa0915b0664420ffe10e95[m
+Author: olga <neuzorova@gmail.com>
+Date:   Mon Mar 28 19:21:37 2022 +0300
+
+    index.html added
+
+[33mcommit 343d3ad682c628bcc09e47e7b87066ec0b7a1344[m
+Author: Xaky0105 <anton.starosotnikov@mail.ru>
+Date:   Mon Mar 28 19:21:36 2022 +0300
+
+    add app.js
+
+[33mcommit be9a99a401134b57fe07b233bcf4582fed150ea1[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:21:28 2022 +0300
+
+    added index.html
+
+[33mcommit 6af24d8c57918f49358d150351ffce703038384f[m
+Author: Web <natkova86@mail.ru>
+Date:   Mon Mar 28 19:20:27 2022 +0300
+
+    added indez.html
+
+[33mcommit e9885bf115875234c2892a1795938d2a44d0f468[m
+Author: ExoticDuck <marchenkov.n@inbox.ru>
+Date:   Mon Mar 28 19:20:13 2022 +0300
+
+    added index.html
+
+[33mcommit 14a027e7b9ef422bb3efa7245f90c526a5ff0c23[m
+Author: anna <anyutachke@gmail.com>
+Date:   Mon Mar 28 19:19:56 2022 +0300
+
+    added index.html
+
+[33mcommit da98d8be90c2bee4e33b22398351415a052c3b81[m
+Author: maxific <maxific@tut.by>
+Date:   Mon Mar 28 19:19:51 2022 +0300
+
+    create index.html
+
+[33mcommit 58cf6f976a166260a137ea29abb788729d74a6fb[m
+Author: nata <7381458@mail.ru>
+Date:   Mon Mar 28 19:19:48 2022 +0300
+
+    added index.html
+
+[33mcommit 1af8114c1da257a2f3710acd0bbf2dce9a198336[m
+Author: Xaky0105 <anton.starosotnikov@mail.ru>
+Date:   Mon Mar 28 19:17:22 2022 +0300
+
+    init index.html
+
+[33mcommit 35af99ea8f21cf1d52e93673ab448717eb8c6cd9[m
+Merge: f965e3d 5c73ec0
+Author: olga <neuzorova@gmail.com>
+Date:   Mon Mar 28 19:09:29 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit ced75f94f01e18419b185bc39fe318c5b0ff9012[m
+Merge: 0542d14 5c73ec0
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:09:07 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit b65ed763d0b0cb12f383227b86ed92fd46e90b4a[m
+Merge: ef89815 5c73ec0
+Author: Web <web@it.step>
+Date:   Mon Mar 28 19:08:49 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit 3eadb77a1b3524b8620c124147fd965f7ec17109[m
+Merge: b6f5add 5c73ec0
+Author: Web <natkova86@mail.ru>
+Date:   Mon Mar 28 19:08:19 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit 74adf262cf7518ad6c0f77ac584344e3306035de[m
+Merge: 4a61c8a 5c73ec0
+Author: anna <anyutachke@gmail.com>
+Date:   Mon Mar 28 19:07:45 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit 16f5c258f2b7c52c9680e9bdec395752f8f02aeb[m
+Merge: 09ee60c 5c73ec0
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Mon Mar 28 19:07:43 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit f9021c60df27ae433601476b11887f6d2a20f6e4[m
+Merge: 46ac51b 5c73ec0
+Author: ExoticDuck <marchenkov.n@inbox.ru>
+Date:   Mon Mar 28 19:07:42 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit 45ad7b2d3964350a2b98aa82b13aaf7f2a35e4b7[m
+Merge: f0ea4ad 5c73ec0
+Author: nata <7381458@mail.ru>
+Date:   Mon Mar 28 19:07:40 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit 453f986a238660a88b0c2192690c7191d34fd20e[m
+Merge: 42357b8 5c73ec0
+Author: Web <gavrilencko.yana2016@gmail.com>
+Date:   Mon Mar 28 19:07:14 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit cc1bbcd81ebdbffc09676b24ca58f0f33178a395[m
+Merge: c461442 5c73ec0
+Author: Xaky0105 <anton.starosotnikov@mail.ru>
+Date:   Mon Mar 28 19:05:13 2022 +0300
+
+    Merge branch 'master' of https://github.com/fashion-prepod/front13_homework
+
+[33mcommit 5c73ec03af166218a2a34f5af9135d5abe95b97a[m
+Merge: 7393c67 06c7d8e
+Author: fashion-prepod <72700988+fashion-prepod@users.noreply.github.com>
+Date:   Mon Mar 28 18:57:26 2022 +0300
+
+    Merge pull request #1 from Timahvey12/master
+    
+    HW1
+
+[33mcommit 06c7d8e71f98754b39aedb5b10a9c3f00cc29f36[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 18:55:55 2022 +0300
+
+    Chenges acording PR
+
+[33mcommit 72fc5cff287ad1169186ab536894729fdc861d71[m
+Author: Web <web@it.step>
+Date:   Mon Mar 28 18:46:32 2022 +0300
+
+    HomeWork init
+
+[33mcommit 46ac51b477823f871db6051daee4f4982322ec11[m
+Author: ExoticDuck <marchenkov.n@inbox.ru>
+Date:   Mon Mar 28 16:56:54 2022 +0300
+
+    first commit
+
+[33mcommit f0ea4add93566cbd58ff265227607a8b0312b17c[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:43:19 2022 +0300
+
+    readme
+
+[33mcommit da29da1e5cbf246fc43718b71fdfb78d3ff22741[m
+Author: maxific <maxific@tut.by>
+Date:   Fri Mar 25 21:39:04 2022 +0300
+
+    Maxim_Fitseu homework
+
+[33mcommit 4a61c8ad984b7cf16b13760d1e0aff0b701c83a4[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:34:13 2022 +0300
+
+    added read.me
+
+[33mcommit b6f5add6f91f043c17d020a9fe6f8be3e58110c0[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:32:23 2022 +0300
+
+    added readme.md
+
+[33mcommit dda91771a50f232872e77c68b7b1b8c9a2063661[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:31:23 2022 +0300
+
+    home
+
+[33mcommit 42357b8729ce6bdfcc2018f59b7677f32171bbb8[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:30:57 2022 +0300
+
+    edded raadme
+
+[33mcommit 471726407ad2d61ae5e026d4fbc29471495d46a2[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:30:53 2022 +0300
+
+    readme.md
+
+[33mcommit f965e3debb346416617e91c5f02cba429a93e1f8[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:29:10 2022 +0300
+
+    readme added
+
+[33mcommit 0542d144ef4253c29acbd496f6090b9eb077e97e[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:28:19 2022 +0300
+
+    hristov
+
+[33mcommit ef8981563b515fc419aad00ae00de54fa0179291[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:28:01 2022 +0300
+
+    add readme.md file
+
+[33mcommit 09ee60c814d9e9477782fda31642de595ff5cf2d[m
+Author: IvanTratsevski <tratsevskiyivan@gmail.com>
+Date:   Fri Mar 25 21:26:38 2022 +0300
+
+    Added readme
+
+[33mcommit c4614423c8e2f06427814b2cb25c0a64dc0cef73[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:24:30 2022 +0300
+
+    add readme
+
+[33mcommit 7393c67954976f8983bc254a951177ad785c5308[m
+Author: Web <web@it.step>
+Date:   Fri Mar 25 21:15:19 2022 +0300
+
+    init readme
