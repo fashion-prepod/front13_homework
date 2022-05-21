@@ -23,27 +23,22 @@
 
 // const userName = prompt('Enter name');
 
-// for (let i = 0; i < people1.length; i++) {
-//     if (people1[i] === userName) {
-//         people2.push(userName);
-//         break;
-//     }
+// if (people1.indexOf(userName) !== -1) {
+//     people2.push(userName);  
 // }
-// console.log(people2);
 
-// for (let i = 0; i < people2.length; i++) {
-//     if (people2[i] === userName) {
-//         people2.splice(i, 1);
-//     }
+// console.log(people2);
+// const indexOfName = people2.indexOf(userName);
+// if (indexOfName !== -1) {
+//     people2.splice(indexOfName, 1);
 // }
+
 // console.log(people2);
 
 // let newArr = [];
 // for (let i = 0; i < people1.length; i++) {
-//     for (let j = 0; j < people2.length; j++) {
-//         if (people1[i] === people2[j]) {
-//             newArr.push(people1[i]);
-//         }
+//     if (people1.indexOf(people2[i]) !== -1) {
+//         newArr.push(people2[i]);
 //     }
 // }
 // console.log(newArr);
