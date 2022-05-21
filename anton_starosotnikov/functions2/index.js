@@ -74,6 +74,7 @@
 // правильный логин, 3 – callback, который вызовется если логин
 // верный, 4 – callback, который вызовется если логин ложный.
 
+
 // function checkLogin(login, registeredLogin, callback1, callback2) {
 //     if (login === registeredLogin) {
 //         callback1();
