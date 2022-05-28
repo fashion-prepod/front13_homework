@@ -66,7 +66,11 @@ function rockPaperScissors() {
             
         } else return;
     }
-    return userWins > compWins ? alert("Вы победили!") : alert("Вы проиграли, компьютер победил:(");
+    if(userWins > compWins) {
+        alert("Вы победили!");
+    } else {
+        alert("Вы проиграли, компьютер победил:(");
+    }
 }
 
 rockPaperScissors();
