@@ -3,7 +3,7 @@
 // const arr = [];
 // let numberArr = 0
 
-// for( i = 1; arr.length < 8; i++){
+// for(  let i = 1; arr.length < 8; i++){
 //     if( i %3 === 0){
 //         arr[numberArr] = i;
 //         numberArr++;
@@ -15,13 +15,10 @@
 //  квадрату своего номера.
 
 // const arr = [];
-// let numberArr = 0
-
-// for( i = 1 ; arr.length < 10; i++){
-    
-//         arr[numberArr] = i*i;
+// let numberArr = 0;
+// for( let i = 1 ; arr.length < 10; i++){    
+//         arr[numberArr] = i * i;
 //         numberArr++;
-    
 // }
 // console.log(arr);
 
@@ -29,8 +26,7 @@
 // направо, так и спаво налево (9)
 
 // const arr = [];
-
-// for( i = 0 ; arr.length < 9; i++){
+// for( let i = 0 ; arr.length < 9; i++){
     
 //           if( i % 2 === 0){
 //                 arr[i] = 2;
@@ -46,7 +42,7 @@
 
 // const arr = [ 2, 5, 54, 41, 98, 10, 63, 87, 88, 90, 101];
 // let evenNumber = 0;
-// for( i = 0 ; arr.length < 10 ; i++){
+// for( let i = 0 ; arr.length < 10 ; i++){
     
 //         if( arr[i] % 2 === 0){
 //             evenNumber++;        
@@ -57,13 +53,11 @@
 // Создать массив из 10 чисел.Вывести на экраны 
 // наиб число из этого массива
 
-// const arr = [ 2, 5, 54, 41, 98, 10, 63, 87, 88, 90, 101];
-
-
+//const arr = [ 2, 5, 54, 41, 98, 10, 63, 87, 88, 90, 101];
+// let num = arr[0];
 // for (let i = 0; i < arr.length; i++) {
-//     if(arr[i] > arr[0]){
-//         arr[0] = arr[i];
+//     if (arr[i] > num) {
+//         num = arr[i];
 //     }
-
 // }
-// alert(arr[0]);
+// console.log(num);
