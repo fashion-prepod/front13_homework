@@ -21,16 +21,6 @@ const isUserInArrNames = (arrNames) => {
 const showListOfNames = async() => {
     const data = await getDataOfUsers(API_URL_USERS);
     const users = data.data;
-    // const usersNames = users.map(user => user.first_name);
-    // usersNames.forEach((name, index) => {
-    //     document.write(`
-    //         ${index === 0 ? '<ul>' : ''}
-    //             <li>${name}</li>
-    //         ${index === usersNames.length - 1 ? '</ul>' : ''}
-    //     `);
-    // });
-    // Понял, что закомменченый код выше мне показался не очень хорошим, т.к там использовал методы и map и forEach. А эти методы имеют не самую быструю скорость работы O(n),
-    // Поэтому решил переписать только с методом map, т.к это ускорит работу, особенно если бы нужно было обрабатывать много данных.
     const usersNames = users.map((user, index) => {
         document.write(`
             ${index === 0 ? '<ul>' : ''}
