@@ -16,7 +16,7 @@ const usersList = async () => {
   const userName = prompt('Enter username');
   returnData.data.find((userObj) => {
   if (userName === userObj.first_name) {
-  document.write(`You enter valid name ${user}`);
+  document.write(`You enter valid name ${userName}`);
   return true;
   }
   });
