@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 
 // Cформировать массив чисел, которые делятся на 3 (число элементов 8)
 
 // const arr = [];
 // let numberArr = 0
+=======
+// сформировать массив чисел, которые делятся на 3 (число элементов 8)
+
+// const arr = [];
+// let numberArr = 0
+
+>>>>>>> master
 // for( i = 1; arr.length < 8; i++){
 //     if( i %3 === 0){
 //         arr[numberArr] = i;
@@ -16,9 +24,18 @@
 
 // const arr = [];
 // let numberArr = 0
+<<<<<<< HEAD
 // for( i = 1 ; arr.length < 10; i++){   
 //         arr[numberArr] = i * i;
 //         numberArr++;
+=======
+
+// for( i = 1 ; arr.length < 10; i++){
+    
+//         arr[numberArr] = i*i;
+//         numberArr++;
+    
+>>>>>>> master
 // }
 // console.log(arr);
 
@@ -27,7 +44,12 @@
 
 // const arr = [];
 
+<<<<<<< HEAD
 // for( i = 0 ; arr.length < 9; i++){    
+=======
+// for( i = 0 ; arr.length < 9; i++){
+    
+>>>>>>> master
 //           if( i % 2 === 0){
 //                 arr[i] = 2;
 //         } else {
@@ -36,12 +58,21 @@
 // }
 // console.log(arr);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 // Создать массив из 10 чисел.Вывести на экраны 
 // кол-во четных чисел из этого массива.
 
 // const arr = [ 2, 5, 54, 41, 98, 10, 63, 87, 88, 90, 101];
 // let evenNumber = 0;
+<<<<<<< HEAD
 // for( i = 0 ; arr.length < 10 ; i++){   
+=======
+// for( i = 0 ; arr.length < 10 ; i++){
+    
+>>>>>>> master
 //         if( arr[i] % 2 === 0){
 //             evenNumber++;        
 //         }
@@ -49,6 +80,7 @@
 //     console.log(evenNumber);
 
 // Создать массив из 10 чисел.Вывести на экраны 
+<<<<<<< HEAD
 // наибольшее число из этого массива.
 
 // const arr = [2, 4, 8, 9, 14, 52, 7, 3, 22, 44, 10];
@@ -123,3 +155,17 @@
 //   }
 // let newArr = people3.concat(people1);
 //     console.log(newArr);
+=======
+// наиб число из этого массива
+
+// const arr = [ 2, 5, 54, 41, 98, 10, 63, 87, 88, 90, 101];
+
+
+// for (let i = 0; i < arr.length; i++) {
+//     if(arr[i] > arr[0]){
+//         arr[0] = arr[i];
+//     }
+
+// }
+// alert(arr[0]);
+>>>>>>> master
